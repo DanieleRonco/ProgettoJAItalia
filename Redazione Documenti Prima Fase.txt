@@ -1,0 +1,44 @@
+Nome della startup: PayBus
+	
+Componenti del gruppo: 1) Daniele Roncoroni Capo
+		       2) Camagni Riccardo ViceCapo
+		       3) D'Assaro Davide Leader
+		       4) Ginisi Gabriele Mediatore
+
+Descrizione del problema da risolvere: Il problema che la nostra startup intende affrontare riguarda la vendita dei biglietti e degli abbonamenti
+	cartacei del pullman, e i problemi che ne derivano. 
+	Infatti, per comprare un biglietto o un abbonamento bisogna obbligatoriamente recarsi fisicamente in tabaccheria, o in un qualsiasi
+	altro posto in cui vengano venduti. Questo, oltre che essere un'azione particolarmente noiosa, potrebbe causare una notevole perdita di
+	tempo, dovuta allo spostamento fisico, tempo che potrebbe essere impiegato in maniera più produttiva, e potrebbe anche causare una perdita
+	di denaro; infatti, quando il biglietto non viene comprato prima di salire sul pullman, ma direttamente dall’autista, il suo prezzo viene 
+	ingiustamente e inspiegabilmente raddoppiato.
+
+Descrizione di che tipo di soluzione si intende realizzare comprensiva di un esempio di utilizzo reale: un'applicazione che permetta all'utende di acquistare
+	online un biglietto o un abbonamento su di una carta ricaricabile. Ogni pullman è poi dotato di un software che, avvicinando una tessera ad un sensore 
+	NFC, verifica la correttezza del biglietto o dell'abbonamento permettendo al passeggero di salire a bordo e tenendo in un DataBase tutte le informazioni
+	degli utenti che utilizzano il servizio.
+	Primo esempio di utilizzo reale:
+		- L'utente, tramite l'applicazione acquista un abbonamento settimanale;
+		- L'utente, quando arriva il pullman, sale a bordo e avvicina la tessera ricaricabile al sensore NFC;
+		- Il software del pullman verifica la presenza e la correttezza di un abbonamento:
+			- se l'abbonamento è quello della settimana corrente, permette all'utente di salire a bordo;
+			- se l'abbonamento non è quello della settimana corrente, nega l'accesso all'utente;
+	Secondo esempio di utilizzo reale:
+		- L'utente, non acquista alcun abbonamento o biglietto;
+		- L'utente, quando arriva il pullman, sale a bordo e avvicina la tessera ricaricabile al sensore NFC;
+		- Il software del pullman verifica la presenza e la correttezza di un abbonamento;
+		- Se l'abbonamento non è presente, verifica il conto presente sulla tessera:
+			- se il conto è sufficiente, acquista un biglietto e permette all'utente di salire a bordo;
+			- se il conto non è sufficiente, nega l'accesso all'utente;
+
+Elenco di articoli e prodotti correlati al problema:
+	Articoli correlati al problema:
+		Questo servizio è già presente in molte parti del mondo, come l’Olanda e molte città italiane, tra le quali si evidenziano Milano 
+		(https://www.atm.it/it/viaggiaconnoi/pagine/atmmobile.aspx), Bolzano e Roma; tuttavia, non è presente nel territorio comasco, ma non si riesce
+		a capire con chiarezza il perché di tale assenza.
+
+	Prodotti correlati al problema:
+		- Arduino;
+		- Sensore NFC;
+		- Buzzer;
+		- LED;
