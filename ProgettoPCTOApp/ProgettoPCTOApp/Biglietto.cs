@@ -9,31 +9,35 @@ namespace ProgettoPCTOApp
     class Biglietto
     {
 
-        private bool singolo;
+        private int durata;
         private int settimana;
         private int mese;
 
         public Biglietto()
         {
-            singolo = false;
+            durata = 0;
             settimana = 0;
             mese = 0;
 
         }
 
-        public Biglietto(bool singolo)
+        public void setDurata(int durata)
         {
-            this.singolo = singolo;
+            this.durata = durata;
         }
 
-        public Biglietto(int settimana)
+        public void setSettimana(int settimana)
         {
             this.settimana = settimana;
         }
 
-        public bool getSingolo()
+        public void setMese(int mese)
         {
-            return singolo;
+            this.mese = mese;
+        }
+        public int getDurata()
+        {
+            return durata;
         }
 
         public int getSettimana()
