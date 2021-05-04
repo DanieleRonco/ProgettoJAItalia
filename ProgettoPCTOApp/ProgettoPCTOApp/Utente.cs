@@ -13,7 +13,6 @@ namespace ProgettoPCTOApp
         private string nascita;
         private string email;
         private string password;
-        private string confpassword;
         private string codFiscale;
         private Biglietto biglietto;
 
@@ -23,30 +22,27 @@ namespace ProgettoPCTOApp
             cognome = "";
             nascita = "";
             email = "";
-            password = "";
-            confpassword = "";
+            password = "";   
             codFiscale = "";
         }
 
-        public Utente(string nome, string cognome, string nascita, string email, string password,string confpassword,string codFiscale)
+        public Utente(string nome, string cognome, string nascita, string email, string password,string codFiscale)
         {
             this.nome = nome ;
             this.cognome = cognome ;
             this.nascita = nascita ;
             this.email = email ;
             this.password = password ;
-            this.confpassword = confpassword;
             this.codFiscale = codFiscale;
         }
 
-        public Utente(string nome, string cognome, string nascita, string email,string password, string confpassword,string codFiscale,Biglietto biglietto)
+        public Utente(string nome, string cognome, string nascita, string email,string password,string codFiscale,Biglietto biglietto)
         {
             this.nome = nome;
             this.cognome = cognome;
             this.nascita = nascita;
             this.email = email;
             this.password = password;
-            this.confpassword = confpassword;
             this.codFiscale = codFiscale;
             this.biglietto = biglietto;
         }
@@ -74,10 +70,7 @@ namespace ProgettoPCTOApp
             return password;
         }
 
-        public string getConfPassword()
-        {
-            return confpassword;
-        }
+     
         public string getCodFiscale()
         {
             return codFiscale;
@@ -86,7 +79,7 @@ namespace ProgettoPCTOApp
         public override string ToString()
         {
             string tmp;
-            tmp = nome + " " + cognome + " " + nascita + " " + email+" "+password+" "+ confpassword+" "+ codFiscale;
+            tmp = nome + " " + cognome + " " + nascita + " " + email+" "+password+" "+ codFiscale;
             return base.ToString();
         }
 

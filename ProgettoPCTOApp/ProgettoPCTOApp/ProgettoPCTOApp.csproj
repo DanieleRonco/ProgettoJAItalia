@@ -58,7 +58,22 @@
     <Compile Include="Biglietto.cs" />
     <Compile Include="ControlliUtente.cs" />
     <Compile Include="Credito.cs" />
+    <Compile Include="FinestraLogin.xaml.cs">
+      <DependentUpon>FinestraLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinestraRegistrazione.xaml.cs">
+      <DependentUpon>FinestraRegistrazione.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gestioneFile.cs" />
     <Compile Include="Utente.cs" />
+    <Page Include="FinestraLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FinestraRegistrazione.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -97,6 +112,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo_large.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
