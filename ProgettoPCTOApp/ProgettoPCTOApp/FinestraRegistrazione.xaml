@@ -21,7 +21,7 @@
         <TextBox x:Name="txtConferma" HorizontalAlignment="Left" Height="23" Margin="230,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.437,8.168"/>
         <Label Content="Inserire Codice Fiscale" HorizontalAlignment="Left" Margin="66,213,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtFiscale" HorizontalAlignment="Left" Height="23" Margin="66,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.437,8.168"/>
-        <Button x:Name="btnCreaAcc" Content="Button" HorizontalAlignment="Left" Margin="66,300,0,0" VerticalAlignment="Top" Width="120" Height="35"/>
+        <Button x:Name="btnCreaAcc" Content="Button" HorizontalAlignment="Left" Margin="66,300,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="BtnCreaAcc_Click"/>
 
     </Grid>
 </Window>

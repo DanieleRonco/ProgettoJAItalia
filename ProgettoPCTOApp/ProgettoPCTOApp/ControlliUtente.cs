@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ProgettoPCTOApp
 {
-    class ControlliUtente
+    public class ControlliUtente
     {
         private Utente utente;
 
-
+        /*
         public ControlliUtente()
         {
 
@@ -97,10 +97,10 @@ namespace ProgettoPCTOApp
 
 
         }
-   }
-
-  
+       }
+     */
     }
+}
 
 
 

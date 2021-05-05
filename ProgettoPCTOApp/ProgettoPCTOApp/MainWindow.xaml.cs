@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,26 @@ namespace ProgettoPCTOApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        gestioneFile registrati;
+
         public MainWindow()
         {
+            registrati = new gestioneFile();
             InitializeComponent();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                registrati.set_nome_file(openFileDialog.FileName);
+                registrati.Carica();
+            }
+
+        }
+
+        private void BtnRegistrazione_Click(object sender, RoutedEventArgs e)
+        {
+            FinestraRegistrazione finestra = new FinestraRegistrazione(registrati);
+            finestra.Show();
+            this.Hide();
         }
     }
 }

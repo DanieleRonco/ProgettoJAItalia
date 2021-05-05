@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProgettoPCTOApp
 {
-    class Utente
+    public class Utente
     {
         private string nome;
         private string cognome;
@@ -89,5 +89,9 @@ namespace ProgettoPCTOApp
             tmp = nome + ";" + cognome + ";" + nascita + ";" + email + ";" + password + ";" + codFiscale+";"+biglietto.ToString();
             return tmp;
         }
+
+      
+
+
     }
 }

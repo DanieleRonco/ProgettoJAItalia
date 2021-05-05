@@ -6,50 +6,33 @@ using System.Threading.Tasks;
 
 namespace ProgettoPCTOApp
 {
-    class Biglietto
+    public class Biglietto
     {
 
-        private int durata;
-        private int settimana;
-        private int mese;
+        private string tariffa;  // se G = giornaliero se S= settimanale M= mensile
+        private int indice;    // in base alla tariffa 
 
         public Biglietto()
         {
-            durata = 0;
-            settimana = 0;
-            mese = 0;
+            tariffa = "";
+            indice = 0;
 
         }
 
-        public void setDurata(int durata)
+        public Biglietto(string tariffa, int indice)
         {
-            this.durata = durata;
+            this.tariffa = tariffa;
+            this.indice = indice;
         }
 
-        public void setSettimana(int settimana)
+        public string getTariffa()
         {
-            this.settimana = settimana;
+            return tariffa;
         }
 
-        public void setMese(int mese)
+        public int getIndice()
         {
-            this.mese = mese;
+            return indice;
         }
-        public int getDurata()
-        {
-            return durata;
-        }
-
-        public int getSettimana()
-        {
-            return settimana;
-        }
-
-        public int getMese()
-        {
-            return mese;
-        }
-
-
     }
 }

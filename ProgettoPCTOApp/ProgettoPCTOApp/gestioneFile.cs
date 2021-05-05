@@ -7,25 +7,31 @@ using System.Threading.Tasks;
 
 namespace ProgettoPCTOApp
 {
-    class gestioneFile
+    public class gestioneFile
     {
 
-        private List<Utente> banca;
+        private List<Utente> lista;
         private string nomeFile;
 
         public gestioneFile()
         {
-            banca = new List<Utente>();
+            lista = new List<Utente>();
             nomeFile = "";
         }
+
+        public void registra(Utente utente)
+        {
+            lista.Add(utente);
+        }
+
 
         public string GetAllCsv()
         {
             string ritorno = "";
-            for (int i = 0; i < banca.Count(); i++)
+            for (int i = 0; i < lista.Count(); i++)
             {
-                if (i != banca.Count() - 1) ritorno += banca.ElementAt(i).ToCsv() + "\n";
-                else ritorno += banca.ElementAt(i).ToCsv();
+                if (i != lista.Count() - 1) ritorno += lista.ElementAt(i).ToCsv() + "\n";
+                else ritorno += lista.ElementAt(i).ToCsv();
             }
             return ritorno;
         }
@@ -37,6 +43,26 @@ namespace ProgettoPCTOApp
         public void set_nome_file(string nomeFile)
         {
             this.nomeFile = nomeFile;
+        }
+
+        public void Carica()
+        {
+            lista.Clear();
+            Utente pTemp;
+            Biglietto temp;
+
+            string linea = "";
+            string tutto = File.ReadAllText(nomeFile);
+            string[] Linee = tutto.Split('\n');
+
+            for (int i = 0; i < Linee.Length; i++)
+            {
+                linea = Linee[i];
+                string[] campi = linea.Split(';');
+                temp = new Biglietto(campi[6], int.Parse(campi[7]));
+                pTemp = new Utente(campi[0], campi[1], campi[2], (campi[3]), campi[4], campi[5],temp);
+                lista.Add(pTemp);
+            }
         }
 
     }
