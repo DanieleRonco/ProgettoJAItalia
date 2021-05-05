@@ -56,7 +56,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Biglietto.cs" />
-    <Compile Include="ControlliUtente.cs" />
     <Compile Include="Credito.cs" />
     <Compile Include="FinestraLogin.xaml.cs">
       <DependentUpon>FinestraLogin.xaml</DependentUpon>

@@ -34,5 +34,18 @@ namespace ProgettoPCTOApp
         {
             return indice;
         }
+        public override string ToString()
+        {
+            string tmp;
+            tmp =  tariffa + " " + indice;
+            return base.ToString();
+        }
+
+        public string ToCsv()
+        {
+            string tmp;
+            tmp = tariffa + ";" + indice ;
+            return tmp;
+        }
     }
 }

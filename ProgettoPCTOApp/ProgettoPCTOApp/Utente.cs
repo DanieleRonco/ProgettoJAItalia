@@ -44,7 +44,14 @@ namespace ProgettoPCTOApp
             this.email = email;
             this.password = password;
             this.codFiscale = codFiscale;
-            this.biglietto = biglietto;
+            
+            if (biglietto==null)
+            {
+                this.biglietto = new Biglietto();
+            }else
+            {
+                this.biglietto = biglietto;
+            }
         }
 
         public string getNome()
@@ -79,14 +86,14 @@ namespace ProgettoPCTOApp
         public override string ToString()
         {
             string tmp;
-            tmp = nome + " " + cognome + " " + nascita + " " + email+" "+password+" "+ codFiscale;
+            tmp = nome + " " + cognome + " " + nascita + " " + email+" "+password+" "+ codFiscale+" "+biglietto.ToString();
             return base.ToString();
         }
 
         public string ToCsv()
         {
             string tmp;
-            tmp = nome + ";" + cognome + ";" + nascita + ";" + email + ";" + password + ";" + codFiscale+";"+biglietto.ToString();
+            tmp = nome + ";" + cognome + ";" + nascita + ";" + email + ";" + password + ";" + codFiscale+";"+biglietto.ToCsv();
             return tmp;
         }
 

@@ -55,8 +55,22 @@ namespace ProgettoPCTOApp
 
             if (viaLibera==true)
             {
-                temp = new Utente(nome, cognome, nascita, email, password, codice);
+                temp = new Utente(nome, cognome, nascita, email, password, codice,null);
                 registrati1.registra(temp);
+                MessageBox.Show("registrato");
+                txtCognome.Text = "";
+                txtConferma.Text = "";
+                txtEmail.Text = "";
+                txtFiscale.Text = "";
+                txtNascita.Text = "";
+                txtNome.Text = "";
+                txtPassword.Text = "";
+
+                registrati1.Salva();
+
+            }else
+            {
+                MessageBox.Show("errore");
             }
 
         }
