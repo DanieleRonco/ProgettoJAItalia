@@ -22,8 +22,7 @@ namespace ProgettoPCTOApp
         gestioneFile registrati1;
         Utente temp;
         private void InitializeMyControl()
-        {
-            
+        {           
             txtPassword.MaxLength = 14;
         }
 
@@ -45,14 +44,44 @@ namespace ProgettoPCTOApp
         private void BtnCreaAcc_Click(object sender, RoutedEventArgs e)
         {
 
-            string nome = txtNome.Text;
+            string nometxt = txtNome.Text;
 
-            string cognome = txtCognome.Text;
+            string cognometxt = txtCognome.Text;
+            string nome = "";
+            string cognome = "";
             string nascita = txtNascita.Text;
             string email = txtEmail.Text;
             string password = txtPassword.Password.ToString();
             string check = txtConferma.Password.ToString();
             string codice = txtFiscale.Text;
+
+            for (int i = 0; i <= nometxt.Length; i++)
+            {
+                if (i == 0)
+                {
+                    nome = nome + nome.Substring(0, 1).ToUpper();
+
+                }
+                else
+                {
+                    nome = nome + nome.Substring(i, 1).ToLower();
+
+                }
+            }
+            for (int i = 0; i <= cognometxt.Length; i++)
+            {
+                if (i == 0)
+                {
+                    cognome = cognome + cognome.Substring(0, 1).ToUpper();
+
+                }
+                else
+                {
+                    cognome = cognome + cognome.Substring(i, 1).ToLower();
+
+                }
+            }
+
 
             bool viaLibera=true;
 

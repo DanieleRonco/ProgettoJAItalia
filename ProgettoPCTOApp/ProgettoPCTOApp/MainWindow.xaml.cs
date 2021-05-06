@@ -35,9 +35,9 @@ namespace ProgettoPCTOApp
             }
 
         }
-        public MainWindow(gestioneFile U)
+        public MainWindow(gestioneFile gf)
         {
-            registrati = U;
+            registrati = gf;
             InitializeComponent();
         }
 

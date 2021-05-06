@@ -19,10 +19,11 @@
         <Label Content="Inserire Codice Fiscale" HorizontalAlignment="Left" Margin="66,213,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtFiscale" HorizontalAlignment="Left" Height="23" Margin="66,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.437,8.168"/>
         <Button x:Name="btnCreaAcc" Content="Registrati" HorizontalAlignment="Left" Margin="66,300,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="BtnCreaAcc_Click"/>
-        <DatePicker x:Name="txtNascita" HorizontalAlignment="Left" Margin="66,126,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="txtNascita" HorizontalAlignment="Left" Margin="66,126,0,0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnHome" Content="Torna Indietro" HorizontalAlignment="Left" Margin="631,300,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="btnHome_Click"/>
         <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="66,185,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
         <PasswordBox x:Name="txtConferma" HorizontalAlignment="Left" Margin="230,185,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+        <Image Margin="609,36,24.333,343.667" Source="logo_large.png" Stretch="Fill"/>
 
     </Grid>
 </Window>

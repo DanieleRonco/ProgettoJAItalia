@@ -31,5 +31,57 @@ namespace ProgettoPCTOApp
 
 
         }
+
+        private void BtnAccedi_Click(object sender, RoutedEventArgs e)
+        {
+            string nometxt = txtNome.Text;
+
+            string cognometxt = txtCognome.Text;
+            string nome = "";
+            string cognome = "";
+            for (int i = 0; i <= nometxt.Length; i++)
+            {
+                if (i == 0)
+                {
+                    nome = nome + nome.Substring(0, 1).ToUpper();
+
+                }
+                else
+                {
+                    nome = nome + nome.Substring(i, 1).ToLower();
+
+                }
+            }
+
+
+            for (int i = 0; i <= cognometxt.Length; i++)
+            {
+                if (i == 0)
+                {
+                    cognome = cognome + cognome.Substring(0, 1).ToUpper();
+
+                }
+                else
+                {
+                    cognome = cognome + cognome.Substring(i, 1).ToLower();
+
+                }
+            }
+
+            string password = txtPassword.Password.ToString();
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
     }
 }
