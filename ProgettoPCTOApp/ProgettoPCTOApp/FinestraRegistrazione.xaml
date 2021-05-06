@@ -11,17 +11,18 @@
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="66,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Inserire Cognome" HorizontalAlignment="Left" Margin="230,36,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.671,-1.058"/>
         <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Height="23" Margin="230,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="66,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.437,8.168"/>
         <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="230,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtNascita" HorizontalAlignment="Left" Height="23" Margin="66,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.483,3.223"/>
         <Label Content="Inserire Data di nascita" HorizontalAlignment="Left" Margin="66,95,0,0" VerticalAlignment="Top"/>
         <Label Content="Inserire Email" HorizontalAlignment="Left" Margin="230,95,0,0" VerticalAlignment="Top"/>
         <Label Content="Inserire Password" HorizontalAlignment="Left" Margin="66,154,0,0" VerticalAlignment="Top"/>
         <Label Content="Conferma Password" HorizontalAlignment="Left" Margin="230,154,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtConferma" HorizontalAlignment="Left" Height="23" Margin="230,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.437,8.168"/>
         <Label Content="Inserire Codice Fiscale" HorizontalAlignment="Left" Margin="66,213,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtFiscale" HorizontalAlignment="Left" Height="23" Margin="66,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.437,8.168"/>
-        <Button x:Name="btnCreaAcc" Content="Button" HorizontalAlignment="Left" Margin="66,300,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="BtnCreaAcc_Click"/>
+        <Button x:Name="btnCreaAcc" Content="Registrati" HorizontalAlignment="Left" Margin="66,300,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="BtnCreaAcc_Click"/>
+        <DatePicker x:Name="txtNascita" HorizontalAlignment="Left" Margin="66,126,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnHome" Content="Torna Indietro" HorizontalAlignment="Left" Margin="631,300,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="btnHome_Click"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="66,185,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+        <PasswordBox x:Name="txtConferma" HorizontalAlignment="Left" Margin="230,185,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
 
     </Grid>
 </Window>

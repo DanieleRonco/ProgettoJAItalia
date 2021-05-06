@@ -19,9 +19,17 @@ namespace ProgettoPCTOApp
     /// </summary>
     public partial class FinestraLogin : Window
     {
+        private void InitializeMyControl()
+        {
+            txtPassword.MaxLength = 14;
+        }
         public FinestraLogin()
         {
+
             InitializeComponent();
+            InitializeMyControl();
+
+
         }
     }
 }

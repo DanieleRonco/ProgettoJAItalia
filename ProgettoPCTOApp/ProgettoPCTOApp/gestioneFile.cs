@@ -59,6 +59,7 @@ namespace ProgettoPCTOApp
             {
                 linea = Linee[i];
                 string[] campi = linea.Split(';');
+
                 temp = new Biglietto(campi[6], int.Parse(campi[7]));
                 pTemp = new Utente(campi[0], campi[1], campi[2], (campi[3]), campi[4], campi[5],temp);
                 lista.Add(pTemp);

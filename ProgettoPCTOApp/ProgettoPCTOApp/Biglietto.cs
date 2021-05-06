@@ -10,7 +10,7 @@ namespace ProgettoPCTOApp
     {
 
         private string tariffa;  // se G = giornaliero se S= settimanale M= mensile
-        private int indice;    // in base alla tariffa 
+        private int indice;    // in base alla tariffa
 
         public Biglietto()
         {

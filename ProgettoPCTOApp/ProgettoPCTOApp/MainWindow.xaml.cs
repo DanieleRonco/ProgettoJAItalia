@@ -35,6 +35,11 @@ namespace ProgettoPCTOApp
             }
 
         }
+        public MainWindow(gestioneFile U)
+        {
+            registrati = U;
+            InitializeComponent();
+        }
 
         private void BtnRegistrazione_Click(object sender, RoutedEventArgs e)
         {
