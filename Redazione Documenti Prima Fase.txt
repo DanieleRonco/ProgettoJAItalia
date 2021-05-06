@@ -42,4 +42,62 @@ Elenco di articoli e prodotti correlati al problema:
 		- Sensore NFC;
 		- Buzzer;
 		- LED;
-;
+
+
+Requisiti
+	Funzionali: creazione di un account, accesso all'account registrato, acquistare un biglietto o un abbonamento, visualizzare tratte, 
+		visualizzare il biglietto o l'abbonamento corrente, aggiungere soldi al "borsello" virtuale, 
+		sistema deve mantenere gli account degli utenti, correttezza biglietto, annulla abbonamento
+	Non-Funzionali: controllo rapido della validità del biglietto < 1s.
+	Tecnologici: linguaggio C#, C++ per Arduino, sensore NFC dello smartphone dell'utente / posto su tutti gli autobus, 
+
+	MUST: l'utente deve potersi registrare e accedere,  l'utente deve poter acquistare un biglietto o un abbonamento,
+		l'utente deve poter, correttezza biglietto
+	SHOULD: la procedura di convalida del biglietto dura meno di 1s, sito internet da cui scaricare l'applicazione, email conferma account
+	MAY: visualizzare la mappa delle tratte, database, server per collegare i dispositivi posti sui vari pullman, email per 
+		password dimenticata, 
+
+	+ caratteristiche biglietto
+
+
+
+Value Proposition dell’impresa, ovvero il motivo per cui i clienti dovrebbero scegliere di acquistare il prodotto o servizio, 
+rispetto a quello della concorrenza. 
+Il motivo per cui i clienti dovrebbero scegliere di acquistare il prodotto o servizio: è l'unica proposta sul territorio, NFC tecnologia sicura nuova 
+	semplice immediata rapida, comprare i biglietti con semplicità e in maniera facile e rapida.
+
+
+
+
+   - Da chi è composto il team e quali sono le responsabilità di ciascuno. 
+ronco
+gino
+cama
+dassa + ruoli
+
+   
+   - Dove e quando si svolgono le riunioni/lezioni: su discord ogni giovedì e venerdì
+   - Quante assenze massime si possono fare e cosa succede se uno studente è assente per più delle metà
+     del tempo. bisogna partecipare e impegnarsi attivamente per il codice o per la documentazione, ma ognuno
+	deve fare la propria parte
+	Se troppo assente report al prof.
+	Alle riunioni tutti presenti
+	
+   - Quali sono le modalità predefinite di comunicazione tra i membri del team (Si mandano delle e-mail?
+     Viene creato un gruppo su WhatsApp?).
+	GitHub
+	WhatsApp 
+	Discord
+	Trello
+	
+	
+	
+   - Come si prendono le decisioni (Si sceglie di votare per alzata di mano? 
+	Regime dittatoriale dell'imperatore Roncoroni Daniele I.
+	3/4 
+	no voto segreto
+		
+
+	Oppure il voto deve essere
+     segreto? Con che percentuale di consenso vengono prese le decisioni?).
+   - non lavorare egoisticamente ma pensare come una squadra.
