@@ -54,35 +54,35 @@ namespace ProgettoPCTOApp
             string password = txtPassword.Password.ToString();
             string check = txtConferma.Password.ToString();
             string codice = txtFiscale.Text;
-
-            for (int i = 0; i <= nometxt.Length; i++)
+            
+            for (int i = 0; i < nometxt.Length; i++)
             {
                 if (i == 0)
                 {
-                    nome = nome + nome.Substring(0, 1).ToUpper();
+                    nome = nome + nometxt.Substring(0, 1).ToUpper();
 
                 }
                 else
                 {
-                    nome = nome + nome.Substring(i, 1).ToLower();
+                    nome = nome + nometxt.Substring(i, 1).ToLower();
 
                 }
             }
-            for (int i = 0; i <= cognometxt.Length; i++)
+            for (int i = 0; i < cognometxt.Length; i++)
             {
                 if (i == 0)
                 {
-                    cognome = cognome + cognome.Substring(0, 1).ToUpper();
+                    cognome = cognome + cognometxt.Substring(0, 1).ToUpper();
 
                 }
                 else
                 {
-                    cognome = cognome + cognome.Substring(i, 1).ToLower();
+                    cognome = cognome + cognometxt.Substring(i, 1).ToLower();
 
                 }
             }
 
-
+            
             bool viaLibera=true;
 
             if (password != check)
