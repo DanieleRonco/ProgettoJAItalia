@@ -1,0 +1,24 @@
+Documento dei Requisiti
+
+Requisiti funzionali:
+	- [MUST] Il cliente crea un account, registrandosi nel sistema.
+	- [MUST] Il cliente accede al proprio account precedentemente registrato.
+	- [MUST] Il cliente collega al proprio account una carta virtuale, con la quale effettuare l'acquisto di biglietti o abbonamenti.
+	- [MUST] Il cliente aggiunge soldi alla propria carta virtuale collegata al proprio account.
+	- [MUST] Il cliente acquista un biglietto o un abbonamento.
+	- [MUST] Il cliente visualizza il biglietto o l'abbonamento corrente.
+	- [MAY] Il cliente visualizza su di una mappa i percorsi di tutte le tratte disponibili.
+	- [MUST] Il sistema verifica la correttezza del biglietto o dell'abbonamento dell'utente.
+	- [MUST] Il sistema cancella il biglietto o l'abbonamento dell'utente non più valido.
+	- [MAY] Il sistema deve consentire all'utente di recuperare la password dimenticata.
+	- [SHOULD] Il cliente scarica l'applicazione da un sito Internet.
+
+Requisiti Non-Funzionali:
+	- [MUST] Il controllo della validità di un biglietto deve avvenire in un tempo inferiore a un secondo.
+	- [MUST] Il sistema mantiene memorizzati tutti gli account creati dagli utenti e le informazioni di ciascuno in un database.
+	- [MAY] Il sistema deve mantiene memorizzati tutti gli account creati dagli utenti e le informazioni di ciascuno su di un server.
+
+Requisiti Tecnologici:
+	- Linguaggio di programmazione C# per l'applicazione dell'utente e il programma del sistema.
+	- Linguaggio di programmazione C++ per le funzionalità della postazione di controllo (Arduino).
+	- Sensore NFC nel dispositivo dell'utente e nella postazione di controllo (lettore NFC collegato ad Arduino).

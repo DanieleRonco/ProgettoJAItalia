@@ -1,0 +1,74 @@
+CASI D'USO
+
+Lista casi d'uso:
+	1) Creazione di un account include-> Verifica username e password
+	2) Acquisto di un biglietto o un abbonamento include-> Accesso all'account include-> Verifica username e password
+						     include-> Scelta tratta e orario o settimana o mese
+	3) Visualizzazione del biglietto o dell'abbonamento corrente include-> Accesso all'account include-> Verifica username e password
+	4) Aggiunta di soldi alla carta virtuale include-> Accesso all'account include-> Verifica username e password
+	5) Verifica del biglietto o dell'abbonamento
+
+Caso d'uso 1)
+	Nome: Creazione di un account
+	Attori: Utente
+	Sequenza di eventi:
+		1 L'utente avvia l'applicazione per la prima volta
+		2 L'utente seleziona la voce "Crea Account"
+		3 Il sistema mostra una schermata nella quale si chiede l'inserimento di varie informazioni personali
+		4 L'utente inserisce le informazioni corrette
+		5 L'utente seleziona la voce "Conferma"
+			5.1 Se le informazioni sono corrette viene creato l'account
+			5.2 Se le informazioni non sono corrette il sistema ne richiede nuovamente l'inserimento
+
+Caso d'uso 2)
+	Nome: Acquisto di un biglietto o un abbonamento
+	Attori: Utente
+	Sequenza di eventi:
+		1 L'utente avvia l'applicazione
+		2 L'utente seleziona la voce "Accedi" e inserisce le informazioni dell'account
+			2.1 Se le informazioni sono corrette, può accedere alle funzionalità dell'account
+				2.1.1.1 L'utente seleziona la voce "Acquista un biglietto"
+					2.1.1.2 L'utente seleziona la tratta del biglietto
+					2.1.1.3 L'utente seleziona la voce "Conferma"
+						2.1.1.3.1 Se il credito è sufficiente, il biglietto viene acquistato
+						2.1.1.3.2 Se il credito è sufficiente, il biglietto non viene acquistato
+				2.1.2.1 L'utente seleziona la voce "Acquista un abbonamento"
+					2.1.2.2 L'utente seleziona la settimana o il mese dell'abbonamento
+					2.1.2.3 L'utente seleziona la voce "Conferma"
+						2.1.2.3.1 Se il credito è sufficiente, l'abbonamento viene acquistato
+						2.1.2.3.2 Se il credito è sufficiente, l'abbonamento non viene acquistato
+			2.2 Se le informazioni non sono corrette, il sistema ne richiede nuovamente l'inserimento
+
+Caso d'uso 3)
+	Nome: Visualizzazione del biglietto o dell'abbonamento corrente
+	Attori: Utente
+	Sequenza di eventi:
+		1 L'utente avvia l'applicazione
+		2 L'utente seleziona la voce "Accedi" e inserisce le informazioni dell'account
+			2.1 Se le informazioni sono corrette, può accedere alle funzionalità dell'account
+				2.1.1 L'utente seleziona la voce "Visualizza biglietto o abbonamento"
+				2.1.2 Il sistema fornisce una visualizzazione dei biglietti o abbonamenti posseduti
+			2.2 Se le informazioni non sono corrette, il sistema ne richiede nuovamente l'inserimento
+
+Caso d'uso 4)
+	Nome: Aggiunta di soldi alla carta virtuale
+	Attori: Utente
+	Sequenza di eventi:
+		1 L'utente avvia l'applicazione
+		2 L'utente seleziona la voce "Accedi" e inserisce le informazioni dell'account
+			2.1 Se le informazioni sono corrette, può accedere alle funzionalità dell'account
+				2.1.1 L'utente seleziona la voce "Aggiungi soldi"
+				2.1.2 Il sistema visualizza una schermata
+				2.1.3 L'utente inserisce la quantità di denaro da accreditare sulla carta virtuale
+				2.1.4 L'utente seleziona la voce "Conferma"
+			2.2 Se le informazioni non sono corrette, il sistema ne richiede nuovamente l'inserimento
+
+Caso d'uso 5)
+	Nome: Verifica del biglietto o dell'abbonamento
+	Attori: Utente
+	Sequenza di eventi:
+		1 L'utente sale a bordo di un autobus
+		2 L'utente avvicina il proprio dispositivo alla postazione di controllo
+		3 Il sistema verifica la validità del biglietto o dell'abbonamento
+			3.1 Se il biglietto o abbonamento è valido, ciò viene comunicato tramite un LED verde e un segnale acustico, e l'utente può salire a bordo
+			3.2 Se il biglietto o abbonamento non è valido, ciò viene comunicato tramite un LED rosso e un segnale acustico, e l'utente non può salire a bordo
