@@ -3,8 +3,10 @@ Caso d'uso 3)
 	Attori: Utente
 	Sequenza di eventi:
 		1 L'utente avvia l'applicazione
-		2 L'utente seleziona la voce "Accedi" e inserisce le informazioni dell'account
-			2.1 Se le informazioni sono corrette, può accedere alle funzionalità dell'account
-				2.1.1 L'utente seleziona la voce "Visualizza biglietto o abbonamento"
-				2.1.2 Il sistema fornisce una visualizzazione dei biglietti o abbonamenti posseduti
-			2.2 Se le informazioni non sono corrette, il sistema ne richiede nuovamente l'inserimento
+		2 L'utente seleziona la voce "Login"
+			2.1 L'utente inserisce le credenziali dell'account (nickname e password) e clicca su "Accedi"
+				2.1.1 Se le credenziali sono corrette, può accedere al menu dell'account
+					2.1.1.1 L'utente seleziona la voce "Visualizza biglietto o abbonamento"
+					2.1.1.2 Il sistema fornisce una visualizzazione dei biglietti o abbonamenti posseduti
+				2.1.2 Se le informazioni non sono corrette, il sistema ne richiede nuovamente l'inserimento
+			2.2 L'utente si accorge di aver sbagliato e col pulsante "Torna Indietro" torna alla schermata principale dell'app

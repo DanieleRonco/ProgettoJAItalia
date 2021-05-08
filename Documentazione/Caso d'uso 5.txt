@@ -6,4 +6,7 @@ Caso d'uso 5)
 		2 L'utente avvicina il proprio dispositivo alla postazione di controllo
 		3 Il sistema verifica la validità del biglietto o dell'abbonamento
 			3.1 Se il biglietto o abbonamento è valido, ciò viene comunicato tramite un LED verde e un segnale acustico, e l'utente può salire a bordo
+				3.1.1 Nel caso il biglietto fosse singolo esso viene cancellato dalla "carta virtuale" dell'utente.
 			3.2 Se il biglietto o abbonamento non è valido, ciò viene comunicato tramite un LED rosso e un segnale acustico, e l'utente non può salire a bordo
+				3.2.1 Nel caso fosse un abbonamento scaduto, esso viene cancellato all'interno della "carta virtuale" dell'utente.
+				3.2.2 Nel caso fosse un biglietto singolo non valido, esso viene cancellato all'interno della "carta virtuale" dell'utente.
