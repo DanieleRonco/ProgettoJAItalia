@@ -1,0 +1,11 @@
+Caso d'uso 1)
+	Nome: Creazione di un account
+	Attori: Utente
+	Sequenza di eventi:
+		1 L'utente avvia l'applicazione per la prima volta
+		2 L'utente seleziona la voce "Crea Account"
+		3 Il sistema mostra una schermata nella quale si chiede l'inserimento di varie informazioni personali
+		4 L'utente inserisce le informazioni corrette
+		5 L'utente seleziona la voce "Conferma"
+			5.1 Se le informazioni sono corrette viene creato l'account
+			5.2 Se le informazioni non sono corrette il sistema ne richiede nuovamente l'inserimento
