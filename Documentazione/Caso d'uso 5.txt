@@ -2,6 +2,7 @@ Caso d'uso 5)
 	Nome: Verifica del biglietto o dell'abbonamento
 	Attori: Utente
 	Sequenza di eventi:
+	***DA MODIFICARE***
 		1 L'utente sale a bordo di un autobus
 		2 L'utente avvicina il proprio dispositivo alla postazione di controllo
 		3 Il sistema verifica la validità del biglietto o dell'abbonamento

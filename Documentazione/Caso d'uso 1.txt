@@ -2,6 +2,7 @@ Caso d'uso 1)
 	Nome: Creazione di un account
 	Attori: Utente
 	Sequenza di eventi:
+	***DA MODIFICARE***
 		1 L'utente avvia l'applicazione per la prima volta
 		2 L'utente seleziona la voce "Crea Account"
 		3 Il sistema mostra una schermata nella quale si chiede l'inserimento di varie informazioni personali

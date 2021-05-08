@@ -2,6 +2,7 @@ Caso d'uso 3)
 	Nome: Visualizzazione del biglietto o dell'abbonamento corrente
 	Attori: Utente
 	Sequenza di eventi:
+	***DA MODIFICARE***
 		1 L'utente avvia l'applicazione
 		2 L'utente seleziona la voce "Login"
 			2.1 L'utente inserisce le credenziali dell'account (nickname e password) e clicca su "Accedi"

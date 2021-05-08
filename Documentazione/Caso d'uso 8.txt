@@ -1,0 +1,5 @@
+Caso d'uso 8)
+	Nome: Verifica username e password
+	Attori: Utente
+	Sequenza di eventi:
+	***DA MODIFICARE***

@@ -1,0 +1,5 @@
+Caso d'uso 6)
+	Nome: Scelta tratta e orario o settimana o mese
+	Attori: Utente
+	Sequenza di eventi:
+	***DA MODIFICARE***
