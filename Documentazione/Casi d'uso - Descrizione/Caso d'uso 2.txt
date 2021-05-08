@@ -1,0 +1,26 @@
+Caso d'uso 2)
+	Nome: Acquisto di un biglietto o un abbonamento
+	Attori: Utente
+	Precondizioni:
+		1 L'utente ha avviato l'applicazione
+		2 L'utente ha effettuato l'accesso al proprio account
+	Sequenza di eventi:
+		1 L'utente seleziona la voce "Acquista un biglietto"
+		2 Il sistema visualizza la schermata per l'acquisto di un biglietto, la cui unica informazione da
+		  inserire è la tratta
+		3 L'utente seleziona la tratta di cui necessita
+		4 L'utente seleziona la voce "Conferma"
+		5 Il sistema associa il biglietto appena acquistato e le sue informazioni all'account dell'utente
+	Sequenze alternative:
+		1 L'utente può abbandonare la funzionalità in qualsiasi momento		
+		2 L'utente seleziona la voce "Acquista un abbonamento"
+			2.1 Il sistema visualizza la schermata per l'acquisto di un abbonamento, la cui informazione da 
+			    inserire è (il numero della) settimana o (il numero del) mese
+			2.2 L'utente seleziona la settimana o il mese di cui necessita
+			2.3 L'utente seleziona la voce "Conferma"
+			2.4 Il sistema associa l'abbonamento appena acquistato e le sue informazioni all'account dell'utente 
+		3 Il credito della carta virtuale associata all'account dell'utente non è sufficiente ad
+		  acquistare un biglietto o un abbonamento
+			3.1 Il sistema visualizza sulla schermata un messaggio di errore
+	Postcondizioni:
+		1 L'utente ha acquistato un biglietto o un abbonamento
