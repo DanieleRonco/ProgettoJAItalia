@@ -1,0 +1,49 @@
+Personas "Extracomunitario"
+   - Dati anagrafici
+        nome: Alì
+        Età: 26 anni
+        Sesso: maschio
+        Città di residenza: Milano(Periferia)
+
+   - Caratteristiche della personalità
+	Estroverso, socievole.
+   - Bisogni, emozioni, aspettative
+	Ha bisogno dei mezzi pubblici per recarsi al lavoro in centro città poichè non ha la patente.
+	Essenso in italia da poco non conosce bene la lingua e ha difficoltà a parlare.
+   - Stile di vita e capacità
+	Salvaguardia l'ambiente, lavoratore.
+	Capacità di adattarsi ai cambiamenti
+   - Interessi e gusti
+	Ha interesse a conoscere la lingua, fare nuove conoscenze, scoprire nuove tendenze.
+   - Hobbies	
+	Corsa, skateboard
+
+Customer Journey Map
+
+- Gli STEP o FASI
+	Ha conosciuto l'app PayBus grazie alle publicità sui social e grazie all'autista dell'autobus che prende
+
+- OBIETTIVI
+	La personas vuole comprare un abbonamento con semplicità e velocità.
+
+ - AZIONI 
+	La personas installa l'app;
+	crea un suo account; 
+	carica del credito; 
+	acquista l'abbonamento desiderato.
+
+ - OGGETTI
+	Tessera sanitaria per il codice fiscale 
+	Smartphone
+
+ - PERSONE
+	Autista dell'autobus
+
+ - EMOZIONI	
+	La personas si sente appagata nello scoprire un app così comoda e semplice da utilizzare.
+	La personas si sente popolare neell'utilizzare un app per comprare un biglietto.
+
+ - TEAM	
+	Il reparto marketing puibblicitario dell'azienda;
+	Dipendenti dell'azienda di trasporti, fiduciosi sull'app PayBus
+	
