@@ -1,0 +1,64 @@
+Personas "Lo Studente"
+   - Dati anagrafici
+        Nome: Matteo
+        Età: 16 anni
+        Sesso: Maschio
+        Città di residenza: Seregno
+
+   - Caratteristiche della personalità
+	Cerca di risparmiare e mettere piu' soldi da parte possibile dato il
+	suo spirito di indipendenza e ribelle. Non è molto socievole
+	ma molto sicuro di se. Tende ad applicarsi solo ai propri interessi
+	risultando molto pigro nelle altre cose.
+
+   - Bisogni, emozioni, aspettative
+	Non ha ne' una patente per la moto ne' una per la macchina (essendo minerenne) 
+	ed ha quindi bisogno di un modo veloce per acquistare un abbonamento data la sua pigrizia
+	sfruttando i mezzi pubblici.
+	Cio' risolvera' il problema del trasporto sia per scuola che per gli allenamenti
+	calcistici e talvolta anche per un uscita con una ragazza di qualche paese vicino.
+
+   - Stile di vita e capacità
+	Usando i mezzi pubblici da quando era piccolo per andare a scuola è molto 
+	aggiornato e ha molta conoscenza del settore come ad esempio le tratte.
+	
+   - Interessi e gusti
+	Guarda molto il calcio interessandosi poco di quel che accade alla politica
+	e allo stato.
+	Non va molto bene a scuola e punta sempre e solo alla sufficienza, esce con molte ragazze 
+	che pero' molto spesso non sono del suo stesso paese.
+
+   - Hobbies
+	Gioca ai videogiochi, Gioca a calcio in una squadra molto vicina a scuola.
+
+Customer Journey Map "Lo Studente"
+
+  - Gli STEP o FASI 
+	Avendo molti compagni di classe che sfruttano gli stessi suoi servizi pubblici è venuto
+	a conoscenza di questa app molto comoda e utilizzata.
+
+   - OBIETTIVI: 
+	Vuole avere la stessa comodità che hanno i compagni nell'utilizzo di questi
+	abbonamenti virtuali.
+
+   - AZIONI: 
+	L'utente scarica l'applicazione sul telefono e si registra utilizzando la propria mail.
+	Non avendo voglia di leggere le regole, ascolta i propri compagni che gli dicono come 
+	usare l'app.
+
+   - OGGETTI: 
+	Un cellulare di ultima generazione contenente un lettore NFC e una connessione ad internet. 
+
+   - PERSONE: 
+	I compagni che spiegano come si trovano con l'app e come la sfruttano al meglio per la
+	propria situazione.
+
+   - EMOZIONI: 
+	Il cliente è molto felice avendo trovato un modo comodo e comunemente usato per risolvere
+	il problema non solo di trasporto, ma anche di pigrizia in quanto ora per avere nuovi 
+	abbonamenti bastano pochi tocchi sul cellulare e non piu' una camminata al bar piu' vicino.
+
+   - TEAM: 
+	Il co-capo che ha sviluppato e messo sul servizio di distribuzione digitale piu' adatto
+	l'applicazione rendendola cosi' facilmente accessibile a chiunque abbia gli oggetti 
+	necessari.
