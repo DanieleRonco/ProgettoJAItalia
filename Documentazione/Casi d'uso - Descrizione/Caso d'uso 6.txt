@@ -3,3 +3,11 @@ Caso d'uso 7)
 	Attori: Utente
 	Sequenza di eventi:
 	***DA MODIFICARE***
+		1 L'utente avvia l'applicazione
+		2 L'utente seleziona la voce "Login"
+		3 Il sistema mostra una schemata in cui si richiede l'inserimento delle credenziali
+			3.1 Il sistema verifica la correttezza dei dati e se l'account è esistente
+			3.1 Se le infomazioni sono errate appariranno appositi errori 
+		4 L'utente seleziona la voce "Area Riservata"
+		5 Il sistema mostra una schermata relativa all'area riservata dell'utente
+		6 Nell'area riservata l'utente potrà gestire l'acquito dei biglietti, visualizzare il biglietto corrente, ricaricare il saldo.
