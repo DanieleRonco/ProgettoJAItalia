@@ -1,0 +1,40 @@
+Personas "Il turista"
+	Dati Anagrafici
+		Nome: Billy
+		Eta': 32
+		Sesso: Femminile
+		Citta: Dortmund
+	-Personalita:
+		-Carattere: 
+			Una persona molto pacata, gentile e sempre aperta a nuove conoscenze. Delle volte forse un po troppo impulsivo
+		-Bisogni: 
+			Billy ha bisogno di scare l'app perche avendo una famiglia numerosa ed essendo un turista che viene da lontano non si e' portato con se la macchina ma ha preferito viaggiare in aereo e usare i mezzi pubblici in citta cosi da faciliatre lo spostamento
+		- Stile di vita e capacità: 
+			Ha uno stile di vita molto adagiato infatti e' manager dell'azienda in cui lavora, oltre a questo e' sposato con un suo collega di lavoro, hanno adottato 3 figlie e vivono tutti insieme in una villa di proprietà
+		-Interessi e gusti:
+			Ama le serate di gala e ama vestire firmato, oltre ai vestiti gli interessano pure le macchine infatti guarda la formula 1 e e ha un garage pieno di macchine
+		-Hobbies:
+			Nel tempo libero billy ama giocare a golf e fare degustazioni di vini, e per variare un po nei weekend va a ubriacarsi nei migliori locali di Monaco
+
+
+	- Gli STEP o FASI 
+		All'info point della citta che vuole visitare viene consigiliata questa app per permettergli a lui e alla famiglia di viaggiare in tranquillita per la citta senza dover pensare sempre a comprare i biglietti
+	- OBIETTIVI: 
+		Billy vuole essere facilitato nel comprare i biglietti per lui e la famiglia senza dover andare al bar, in quanto, essendo straniero non conosce minimamente l'italiano 
+	- AZIONI: 
+		Billy ha il compito di aprire l'app scaricata sul telefono e comprare i biglietti per se e per il resto della famiglia, puo scegliere se acquistare un biglietto giornaliero o settimanale
+	- OGGETTI: 
+		Il codice fiscale
+		UN telefono che supporti l'NFC e che abbia una connessione ad internet
+	- PERSONE: 
+		Billy
+		La sua famiglia
+		I dipendenti della compagnia di trasporto
+	- EMOZIONI: 
+		Contento in quanto ha trovato un servizio utile, funzionale e che facilita il fatto di dover comprare i biglietti
+     utilizzando lo stesso linguaggio che userebbe il nostro cliente-tipo.
+	- TEAM:
+		Capo e Co-Capo per la pubblicita e la divulgazione dell'app
+		Sviluppatore per lo sviluppo dell'app
+		
+	

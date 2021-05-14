@@ -1,0 +1,58 @@
+Personas - La Donna Anziana
+
+- Dati anagrafici
+   Nome: Giovanna
+   Cognome: Rossi
+   Età: 70 anni
+   Sesso: femmina
+   Città di residenza: Cantù
+   Indirizzo di residenza: Via Salvo D'Acquisto, 3 22063 Cantù CO
+
+- Caratteristiche della personalità
+   Nonostante l’età, è rimasta una persona molto giovanile, ma soprattutto curiosa, essendo sempre in cerca di nuove esperienze.
+   È una persona onesta, sempre corretta con il prossimo e sempre rispettosa delle regole.
+
+- Bisogni, emozioni, aspettative
+   Non avendo la patente, per andare a trocare i suoi nipoti, deve prendere un mezzo pubblico e dunque si aspetta sia sempre puntuale. Inoltre,
+   non riuscendo a camminare molto bene, anche a causa dell'età, vuole camminare e spostarsi inutilmente il meno possibile.
+
+- Stile di vita e capacità
+   Vive in una palazzina popolare ed essendo poco facoltosa, tant'è che non ha una macchina, se possibile, cerca di risparmiare il più possibile denaro.
+   E' sempre attenta all'ambiente, tant'è che, anche per difficoltà economiche, non ha una macchina e prende il pullman.
+
+- Interessi e gusti
+   Vuole sempre stare al passo con i tempi, per questo possiede uno smartphone e vuole anche rimanere aggiornata sulle novità tecnologiche.
+   Le piacciono i documentari, ma soprattutto i programmi che trattano di tecnologia.
+
+- Hobbies
+   Essendo canturina, nel tempo libero le piace fare il pizzo.
+   Le piace cucinare, soprattutto i dolci.
+   Le piace far visita ai suoi nipoti.
+
+
+
+
+
+Customer Journey Map
+
+- Stava guardando il telegiornale, quando è stata trasmessa in televisione la pubblicità dell'applicazione.
+
+- Ha visto l'applicazione ed ha subito pensato che fosse un ottimo modo per provare una nuova esperienza di utilizzo dei mezzi pubblici, ma soprattuto
+  per evitare di muoversi inutilmente e acquistare un biglietto o un abbonamento comodamente da casa propria, senza doversi recare inutilmente 
+  dal tabaccaio la mattina seguente.
+
+- Azioni: dopo aver visto la pubblicità al telegiornale, va sul servizio di distribuzione digitale Google Play Store, cerca l’applicazione e la scarica. 
+  La mattina seguente compra l’abbonamento settimanale per salire sul pullman.
+
+- Oggetti: si necessita di uno smartphone di ultima generazione dotato di tecnologia NFC.
+
+- Persone: Persone coinvolte nella pubblicità. Autista del pullman che può fornire aiuto in caso di bisogno.
+  Oltre a ciò nulla, perché l’applicazione è fatta per essere utilizzata autonomamente dagli utenti.
+
+- Emozioni: Appena aver visto l’applicazione è curiosa di provarla, perché è una novità che non ha mai visto prima. Dopo aver scaricato l’applicazione 
+  la sua curiosità non si placa, perché vuole conoscere a pieno le funzionalità che consente l’applicazione. Dopo aver comprato il biglietto è felice per 
+  aver risparmiato tempo, ma anche per non essersi mossa troppo.
+
+- Team: Capo e Co-Capo che deve occuparsi della pubblicità, Capo e Co-Capo che si sono occupati di mettere l’applicazione sul servizio di distribuzione 
+  digitale (Apple Store o Google Play Store). Ovviamente i programmatori che hanno sviluppato l’applicazione.
+
