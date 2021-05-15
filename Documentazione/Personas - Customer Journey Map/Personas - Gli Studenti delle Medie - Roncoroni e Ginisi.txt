@@ -1,0 +1,61 @@
+Personas - Gli Studenti delle Medie
+
+- Dati anagrafici
+   Età: 13 anni
+   Città di residenza: Como e dintorni
+
+- Caratteristiche della personalità
+   Sono delle persone dormiglione, e dunque la mattina non gli piace alzarsi preso ma dormire il più possibile.
+   Sono delle persone non molto sportive, dunque, se possibile, preferiscono non utilizzare la bicicletta ma altri mezzi di trasporto.
+   Sono curiosi, dunque alla continua ricerca di nuove esperienze.
+   
+- Bisogni, emozioni, aspettative
+   Ogni mattina hanno bisogno di recarsi a scuola.
+   Si aspettano dunque un servizio di trasporto puntuale ed efficace.
+   Non avendo nè la patende della moto nè la patente della macchina, per spostarsi hanno bisogno del trasporto dei genitori, ma, non 
+	essendo sempre disponibili, hanno spesso bisogno del trasporto pubblico.
+
+- Stile di vita e capacità
+   Essendo giovani, non sono indipendenti economicamente, dunque, anche a causa dei genitori, devono cercare di risparmiare il
+	più possibile.
+   
+- Interessi e gusti
+   Sono da sempre inseriti nel mondo digitale, dunque gli piace la tecnologia e gli piace sempre rimanere aggiornati sulle ultime novità
+	tecnologiche.
+
+- Hobbies
+   Hanno molto tempo libero durante il quale gli piace uscire e trovarsi con gli amici; tuttavia, alcuni amici abitano lontano da loro che quindi,
+	non potendo sempre contare sull'aiuto dei genitori, devono utilizzare necessariamente i mezzi pubblici.
+   Appena hanno del tempo libero, si divertono usufruendo dei contenuti sui social.
+	
+	
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Customer Journey Map
+
+- Step: Stavano utilizzando il loro social preferito, quando si è presentata la pubblicità dell'applicazione. Hanno subito cercato l'applicazione 
+	su YouTube e si sono fatti influenzare dal parere positivo del loro YouTuber preferito. Hanno quindi voluto condividere	l'applicazione che 
+	hanno scoperto con tutti i loro amici e compagni di classe.
+
+- Obiettivi: Hanno visto l'applicazione e hanno subito pensato fosse un ottimo modo per provare una nuova esperienza di utilizzo dei mezzi pubblici, 
+	ma soprattutto una maniera per semplificare l'acquisto dei biglietti e degli abbonamenti: con l'applicazione possono acquistarli semplicemente
+	da casa, senza doversi svegliare presto la mattina per recarsi a comprarli dal tabaccaio.
+
+- Azioni: Dopo aver conosciuto l'applicazione, e aver riconosciuto la sua utilità, hanno deciso di scaricarla dal servizio di distribuzione
+	digitale presente sui loro smartphone. Dopo aver creato un account e aver collegato ad esso il metodo di pagamento, ovviamente richiedendo il 
+	permesso da parte dei genitori, hanno acquistato un abbonamento settimanale per la settimana successiva durante la quale si sarebbero 
+	dovuti recare a scuola. La mattina successiva, dopo aver acquistato l'abbonamento, hanno voluto provare l'applicazione salendo sul pullman e 
+	utilizzando l'abbonamento virtuale.
+
+- Oggetti: Si necessita di uno smartphone di ultima generazione, dotato di tecnologia NFC.
+
+- Persone: Lo YouTuber che ha sponsorizzato l'applicazione, il conducente del mezzo che, in caso di difficoltà, ha aiutato gli studenti ad 
+	utilizzare l'applicazione.
+
+- Emozioni: Subito dopo aver visto l'applicazione, erano curiosi di provarla, perché era un'applicazione che rispondeva a tutte le loro esigenze, 
+	caratteriali e di trasporto. Dopo averla utilizzata per la prima volta, si sono ulteriormente stupiti della sua utilità e dunque, sull'onda
+	di questa esaltazione, l'hanno consigliata a tutti gli amici e compagni di classe.
+  
+- Team: Il Capo e il ViceCapo si sono occupati di promuovere l'applicazione tramite una pubblicità e di pubblicarla sul servizio di distribuzione digitale.
+  	I programmatori hanno sviluppato l'applicazione.
