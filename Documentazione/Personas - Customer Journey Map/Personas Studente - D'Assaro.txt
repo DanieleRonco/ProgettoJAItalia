@@ -1,22 +1,20 @@
-Personas "Lo Studente"
-   - Dati anagrafici
-        Nome: Matteo
-        Età: 16 anni
-        Sesso: Maschio
-        Città di residenza: Seregno
+Personas "Studenti delle superiori"
+   - Dati
+        Età: dai 14 ai 19 anni
+        Luogo generale: Brianza
 
    - Caratteristiche della personalità
-	Cerca di risparmiare e mettere piu' soldi da parte possibile dato il
-	suo spirito di indipendenza e ribelle. Non è molto socievole
-	ma molto sicuro di se. Tende ad applicarsi solo ai propri interessi
-	risultando molto pigro nelle altre cose.
+	Cercano di risparmiare e mettere piu' soldi da parte possibile dato il
+	loro spirito di indipendenza e ribelle tipico di queste età.Tendono ad applicarsi
+	solo ai propri interessi risultando molto pigro nelle altre cose come nell'avviarsi
+	al bar piu' vicino per comprare un abbonamento.
 
    - Bisogni, emozioni, aspettative
-	Non ha ne' una patente per la moto ne' una per la macchina (essendo minerenne) 
-	ed ha quindi bisogno di un modo veloce per acquistare un abbonamento data la sua pigrizia
-	sfruttando i mezzi pubblici.
-	Cio' risolvera' il problema del trasporto sia per scuola che per gli allenamenti
-	calcistici e talvolta anche per un uscita con una ragazza di qualche paese vicino.
+	Non hanno ne' una patente per la moto ne' una per la macchina (essendo quasi tutti minorenni
+	o maggiorenni da poco) ed hanno quindi bisogno di un modo veloce per acquistare un abbonamento 
+	data la loro pigrizia sfruttando i mezzi pubblici, primo su tutti nel loro caso il pullman.
+	Cio' risolvera' il problema del trasporto sia per scuola che per (per studenti sportivi) gli
+	allenamenti sportivi e talvolta anche per un uscita con una ragazza di qualche paese vicino.
 
    - Stile di vita e capacità
 	Usando i mezzi pubblici da quando era piccolo per andare a scuola è molto 
