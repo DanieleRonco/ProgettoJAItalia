@@ -15,6 +15,7 @@ namespace ProgettoPCTOApp
         private string password;
         private string codFiscale;
         private Biglietto biglietto;
+        private Credito carta;
 
         public Utente()
         {
@@ -36,7 +37,7 @@ namespace ProgettoPCTOApp
             this.codFiscale = codFiscale;
         }
 
-        public Utente(string nome, string cognome, string nascita, string email,string password,string codFiscale,Biglietto biglietto)
+        public Utente(string nome, string cognome, string nascita, string email,string password,string codFiscale,Credito carta,Biglietto biglietto)
         {
             this.nome = nome;
             this.cognome = cognome;
@@ -44,6 +45,7 @@ namespace ProgettoPCTOApp
             this.email = email;
             this.password = password;
             this.codFiscale = codFiscale;
+            this.carta = carta;
             
             if (biglietto==null)
             {
@@ -93,10 +95,11 @@ namespace ProgettoPCTOApp
         public string ToCsv()
         {
             string tmp;
-            tmp = nome + ";" + cognome + ";" + nascita + ";" + email + ";" + password + ";" + codFiscale+";"+biglietto.ToCsv();
+            tmp = nome + ";" + cognome + ";" + nascita + ";" + email + ";" + password + ";" + codFiscale+";"+carta.ToCsv()+";"+biglietto.ToCsv();
             return tmp;
         }
 
+        
       
 
 

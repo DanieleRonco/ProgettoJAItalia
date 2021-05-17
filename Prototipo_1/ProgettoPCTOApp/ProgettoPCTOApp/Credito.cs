@@ -22,5 +22,24 @@ namespace ProgettoPCTOApp
             this.saldo = saldo;
             this.pin = pin ;
         }
+
+        public float getSaldo()
+        {
+            return saldo;
+        }
+
+        public string getPin()
+        {
+            return pin;
+        }
+
+
+        public string ToCsv()
+        {
+            string tmp;
+            tmp = saldo + ";" + pin;
+            return tmp;
+        }
+
     }
 }
