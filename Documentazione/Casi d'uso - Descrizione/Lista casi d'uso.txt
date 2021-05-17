@@ -1,9 +1,0 @@
-LISTA CASI D'USO
-
-Lista casi d'uso:
-	1) Creazione di un account include-> Verifica username e password
-	2) Acquisto di un biglietto o un abbonamento include-> Accesso all'account include-> Verifica username e password
-	3) Visualizzazione del biglietto o dell'abbonamento corrente include-> Accesso all'account include-> Verifica username e password
-	4) Aggiunta di soldi alla carta virtuale include-> Accesso all'account include-> Verifica username e password
-	5) Verifica del biglietto o dell'abbonamento
-

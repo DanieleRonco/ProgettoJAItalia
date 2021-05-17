@@ -9,6 +9,7 @@ MFRC522::StatusCode status;
 
 //byte blockDataNome[16] = {"Daniele"};
 //byte blockDataCognome[16] = {"Roncoroni"};
+//byte blockDataID[16] = {"15"};
 //byte blockDataAbbonamento[16] = {"2"};
 //byte blockDataFineAbbonamento[16] = {"20210615"};
 //byte blockDataCredito[16] = {"23"};
@@ -16,18 +17,19 @@ byte readBlockData[18];
 byte bufferLen = 18;
 
 String UID = "";
-int bloccoNome = 4;
-int bloccoCognome = 5;
-int bloccoAbbonamento = 6; //0 no, 1 settimanale, 2 mensile, 3 annuale
-int bloccoFineAbbonamento = 8; //data in formato aaaammgg
-int bloccoCredito = 9;
+#define bloccoNome 4
+#define bloccoCognome 5
+#define bloccoID 6
+#define bloccoAbbonamento 8 //0 no, 1 settimanale, 2 mensile, 3 annuale
+#define bloccoFineAbbonamento 9 //data in formato aaaammgg
+#define bloccoCredito 10
 
 String stringaSeriale = "";
 String accesso = "";
 
-int ledVerde = 6;
-int ledRosso = 5;
-int Buzzer = 7;
+#define ledVerde 6
+#define ledRosso 5
+#define Buzzer 7
  
 void setup() 
 {
@@ -35,10 +37,10 @@ void setup()
   pinMode(ledRosso, OUTPUT);
   pinMode(Buzzer, OUTPUT);
   
+  SPI.begin();      // Si inizializza il canale SPI
+  mfrc522.PCD_Init();   // Si inizializza la scheda NFC (MFRC522)
+
   Serial.begin(9600);
-  SPI.begin();      // inizializza canale SPI
-  mfrc522.PCD_Init();   // inizializza scheda NFC (MFRC522)
-  
   Serial.println("Setup Completato...");
   Serial.println();
 }
@@ -75,6 +77,7 @@ void loop()
     /*
     WriteDataToBlock(bloccoNome, blockDataNome);
     WriteDataToBlock(bloccoCognome, blockDataCognome);
+    WriteDataToBlock(bloccoID, blockDataID);
     WriteDataToBlock(bloccoAbbonamento, blockDataAbbonamento);
     WriteDataToBlock(bloccoFineAbbonamento, blockDataFineAbbonamento);
     WriteDataToBlock(bloccoCredito, blockDataCredito);
@@ -85,6 +88,8 @@ void loop()
     stringaSeriale.concat(String((char*)readBlockData) + ";");
     ReadDataFromBlock(bloccoCognome, readBlockData);
     stringaSeriale.concat(String((char*)readBlockData) + ";");
+    ReadDataFromBlock(bloccoID, readBlockData);
+    stringaSeriale.concat(String((char*)readBlockData) + ";");
     ReadDataFromBlock(bloccoAbbonamento, readBlockData);
     stringaSeriale.concat(String((char*)readBlockData) + ";");
     ReadDataFromBlock(bloccoFineAbbonamento, readBlockData);
@@ -93,12 +98,14 @@ void loop()
     stringaSeriale.concat(String((char*)readBlockData) + ";");
 
     Serial.println(stringaSeriale);
-  
-    //WritePrintDataFromBlock(bloccoNome, readBlockData);
-    //WritePrintDataFromBlock(bloccoCognome, readBlockData);
-    //WritePrintDataFromBlock(bloccoAbbonamento, readBlockData);
-    //WritePrintDataFromBlock(bloccoFineAbbonamento, readBlockData);
-    //WritePrintDataFromBlock(bloccoCredito, readBlockData);    
+
+    /*
+    WritePrintDataFromBlock(bloccoNome, readBlockData);
+    WritePrintDataFromBlock(bloccoCognome, readBlockData);
+    WritePrintDataFromBlock(bloccoAbbonamento, readBlockData);
+    WritePrintDataFromBlock(bloccoFineAbbonamento, readBlockData);
+    WritePrintDataFromBlock(bloccoCredito, readBlockData);
+    */  
     
     //Serial.println();
     //Serial.println();
@@ -112,6 +119,6 @@ void loop()
   }
 
   while (Serial.available() == 0);
-  accesso = Serial.readStringUntil(';');
+  accesso = Serial.readStringUntil('\n');
   OutputAccesso();
 }

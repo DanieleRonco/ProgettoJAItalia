@@ -40,6 +40,8 @@ void ReadDataFromBlock(int blockNum, byte readBlockData[])
   }  
 }
 
+
+/* Funzione per leggere e stampare il contenuto di un blocco dati */
 void WritePrintDataFromBlock(int blockNum, byte readBlockData[])
 {
   ReadDataFromBlock(blockNum, readBlockData);
@@ -50,26 +52,33 @@ void WritePrintDataFromBlock(int blockNum, byte readBlockData[])
   Serial.println("");
 }
 
+
+/* Funzione per stampare le info della carta e il suo contenuto */
 void WriteAllCardData()
 {
   for (int i=0; i<76; i++) {Serial.print("=");}
   Serial.println();
   Serial.println("DATI SCHEDA :");
-  mfrc522.PICC_DumpToSerial(&(mfrc522.uid));
+  mfrc522.PICC_DumpToSerial(&(mfrc522.uid));  /* funzione della libreria per stampare tutte le informazioni della scheda dato l'UID*/
   for (int i=0; i<76; i++) {Serial.print("=");}
   Serial.println();
 }
 
-void OutputAccesso() {
-  accesso = "OK";
+
+/* Funzione di output dell'accesso consentito o negato (visivo con LED, sonoro con buzzer) */
+void OutputAccesso() {  
   if(accesso == "OK"){
     tone(Buzzer, 4978, 500);
     digitalWrite(ledVerde, HIGH);
     digitalWrite(ledRosso, LOW);
-  } else {
+  } else if (accesso == "KO"){
     tone(Buzzer, 250, 500);
     digitalWrite(ledVerde, LOW);
     digitalWrite(ledRosso, HIGH);
+  } else {
+    tone(Buzzer, 150, 250);
+    delay(250);
+    tone(Buzzer, 150, 250);
   }
   delay(2500); 
   digitalWrite(ledVerde, LOW);
