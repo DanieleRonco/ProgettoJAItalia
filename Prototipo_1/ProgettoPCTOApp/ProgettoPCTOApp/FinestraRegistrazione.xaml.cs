@@ -14,9 +14,7 @@ using System.Windows.Shapes;
 
 namespace ProgettoPCTOApp
 {
-    /// <summary>
-    /// Logica di interazione per FinestraRegistrazione.xaml
-    /// </summary>
+
     public partial class FinestraRegistrazione : Window
     {
         gestioneFile registrati1;

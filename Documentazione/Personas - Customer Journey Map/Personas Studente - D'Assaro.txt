@@ -17,35 +17,33 @@ Personas "Studenti delle superiori"
 	allenamenti sportivi e talvolta anche per un uscita con una ragazza di qualche paese vicino.
 
    - Stile di vita e capacità
-	Usando i mezzi pubblici da quando era piccolo per andare a scuola è molto 
-	aggiornato e ha molta conoscenza del settore come ad esempio le tratte.
+	Molti usando i mezzi pubblici da quando sono piccoli per andare a scuola sono molto 
+	aggiornati e hanno molta conoscenza del settore come ad esempio le tratte, il resto invece ha
+	a disposizione una lista di tratte e una pagina di spiegazione su come usare il programma.
 	
    - Interessi e gusti
-	Guarda molto il calcio interessandosi poco di quel che accade alla politica
-	e allo stato.
-	Non va molto bene a scuola e punta sempre e solo alla sufficienza, esce con molte ragazze 
-	che pero' molto spesso non sono del suo stesso paese.
+	Spesso praticano sport in dei paesi vicini oppure sono soliti uscire tra di loro,
 
-   - Hobbies
-	Gioca ai videogiochi, Gioca a calcio in una squadra molto vicina a scuola.
 
 Customer Journey Map "Lo Studente"
 
   - Gli STEP o FASI 
-	Avendo molti compagni di classe che sfruttano gli stessi suoi servizi pubblici è venuto
-	a conoscenza di questa app molto comoda e utilizzata.
+	Avendo molti compagni di classe che sfruttano gli stessi suoi servizi pubblici spesso vengono
+	a conoscenza di questa app molto comoda e utilizzata. Ed ecco poi che cominciano ad usare
+	lo stesso e medesimo metodo.
 
    - OBIETTIVI: 
-	Vuole avere la stessa comodità che hanno i compagni nell'utilizzo di questi
+	Vogliono avere la stessa comodità che hanno i compagni nell'utilizzo di questi
 	abbonamenti virtuali.
 
    - AZIONI: 
-	L'utente scarica l'applicazione sul telefono e si registra utilizzando la propria mail.
-	Non avendo voglia di leggere le regole, ascolta i propri compagni che gli dicono come 
-	usare l'app.
+	L'utente sale sul pullman e si registra dal "computerino" utilizzando la propria mail.
+	Ci sarà a disposizione una pagina di informazioni e regole,altri hanno già ascoltato
+	i propri compagni per come usare l'app.
 
    - OGGETTI: 
-	Un cellulare di ultima generazione contenente un lettore NFC e una connessione ad internet. 
+	Un cellulare di ultima generazione contenente un lettore NFC per fare da tessera, una mail
+	e per quanto riguarda il pullman un lettore nfc collegato ad un computerino apposito.
 
    - PERSONE: 
 	I compagni che spiegano come si trovano con l'app e come la sfruttano al meglio per la
@@ -54,9 +52,9 @@ Customer Journey Map "Lo Studente"
    - EMOZIONI: 
 	Il cliente è molto felice avendo trovato un modo comodo e comunemente usato per risolvere
 	il problema non solo di trasporto, ma anche di pigrizia in quanto ora per avere nuovi 
-	abbonamenti bastano pochi tocchi sul cellulare e non piu' una camminata al bar piu' vicino.
+	abbonamenti bastano pochi tocchi sul computerino e non piu' una camminata al bar piu' vicino.
 
    - TEAM: 
-	Il co-capo che ha sviluppato e messo sul servizio di distribuzione digitale piu' adatto
-	l'applicazione rendendola cosi' facilmente accessibile a chiunque abbia gli oggetti 
-	necessari.
+	Il vice-capo che ha sviluppato e messo sul servizio di distribuzione digitale piu' adatto
+	l'applicazione per computerini interni al pullman, rendendola cosi' facilmente accessibile
+	ai pullman idonei.

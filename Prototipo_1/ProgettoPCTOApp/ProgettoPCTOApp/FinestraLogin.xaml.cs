@@ -14,9 +14,7 @@ using System.Windows.Shapes;
 
 namespace ProgettoPCTOApp
 {
-    /// <summary>
-    /// Logica di interazione per FinestraLogin.xaml
-    /// </summary>
+    
     public partial class FinestraLogin : Window
     {
         gestioneFile listaRegistrati;
@@ -82,7 +80,7 @@ namespace ProgettoPCTOApp
             }
             else
             {
-                MessageBox.Show("non sei registrato, torna alla schermata principale e registrati");
+                MessageBox.Show("Non sei registrato! torna alla schermata principale e registrati");
             }
 
 
@@ -92,6 +90,15 @@ namespace ProgettoPCTOApp
 
 
 
+        }
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            
+                MainWindow main = new MainWindow();
+                main.Show();
+                this.Hide();
+            
         }
     }
 }
