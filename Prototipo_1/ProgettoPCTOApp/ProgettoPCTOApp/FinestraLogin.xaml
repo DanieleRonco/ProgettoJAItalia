@@ -12,7 +12,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Label Content="LOGIN" Margin="259,40,249,0" VerticalAlignment="Top"/>
-        <Label Content="Inserire Nome:" HorizontalAlignment="Left" Margin="222,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="Inserire ID:" HorizontalAlignment="Left" Margin="222,93,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNome" Height="23" Margin="222,124,212,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Height="23" Margin="222,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Inserire Cognome:" HorizontalAlignment="Left" Margin="222,152,0,0" VerticalAlignment="Top" Width="120"/>

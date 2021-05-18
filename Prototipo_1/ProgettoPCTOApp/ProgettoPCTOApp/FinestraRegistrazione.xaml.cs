@@ -54,6 +54,7 @@ namespace ProgettoPCTOApp
             string password = txtPassword.Password.ToString();
             string check = txtConferma.Password.ToString();
             string codice = txtFiscale.Text;
+            float saldo = float.Parse(txtSaldo.Text);
             
             for (int i = 0; i < nometxt.Length; i++)
             {
@@ -92,7 +93,7 @@ namespace ProgettoPCTOApp
 
             if (viaLibera==true)
             {
-                temp = new Utente(nome, cognome, nascita, email, password, codice,null);
+                temp = new Utente(nome, cognome, nascita, email, password, codice,saldo,null);
                 registrati1.registra(temp);
                 MessageBox.Show("Registrato correttamente!");
                 txtCognome.Text = "";
@@ -101,6 +102,7 @@ namespace ProgettoPCTOApp
                 txtFiscale.Text = "";
                 txtNascita.Text = "";
                 txtNome.Text = "";
+                txtSaldo.Text = "";
                 txtPassword.Clear();
 
                 registrati1.Salva();

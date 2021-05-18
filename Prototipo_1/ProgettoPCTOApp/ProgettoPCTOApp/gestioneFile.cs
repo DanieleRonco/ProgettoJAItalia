@@ -60,10 +60,42 @@ namespace ProgettoPCTOApp
                 linea = Linee[i];
                 string[] campi = linea.Split(';');
 
-                temp = new Biglietto(campi[6], int.Parse(campi[7]));
-                pTemp = new Utente(campi[0], campi[1], campi[2], (campi[3]), campi[4], campi[5],temp);
+                temp = new Biglietto(campi[7], int.Parse(campi[8]));
+                pTemp = new Utente(campi[0], campi[1], campi[2], (campi[3]), campi[4], campi[5],float.Parse(campi[6]),temp);
                 lista.Add(pTemp);
             }
+        }
+
+
+
+        public bool isResistrato(Utente utente)
+        {
+            for (int i = 0;  i< lista.Count; i++)
+            {
+                if ((utente.getCognome() == lista.ElementAt(i).getCognome())&& (utente.getCodFiscale()==lista.ElementAt(i).getCodFiscale())&&(utente.getPassword()==lista.ElementAt(i).getPassword()))
+                {
+                    return true;
+                }
+            }
+
+
+            return false;
+        }
+
+        public Utente getUtente(Utente u)
+        {
+            Utente temp=new Utente();
+            for (int i = 0; i < lista.Count; i++)
+            {
+                if ((u.getCognome() == lista.ElementAt(i).getCognome()) && (u.getCodFiscale() == lista.ElementAt(i).getCodFiscale()) && (u.getPassword() == lista.ElementAt(i).getPassword()))
+                {
+                    temp = lista.ElementAt(i);
+                    return temp;
+                }
+            }
+
+            return null;
+
         }
 
     }

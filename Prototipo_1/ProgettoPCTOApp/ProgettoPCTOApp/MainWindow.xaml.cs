@@ -47,5 +47,12 @@ namespace ProgettoPCTOApp
             finestra.Show();
             this.Hide();
         }
+
+        private void BtnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            FinestraLogin finestra = new FinestraLogin(registrati);
+            finestra.Show();
+            this.Hide();
+        }
     }
 }

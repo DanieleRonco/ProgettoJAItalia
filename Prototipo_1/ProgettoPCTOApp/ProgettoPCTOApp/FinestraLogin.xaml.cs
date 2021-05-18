@@ -19,6 +19,10 @@ namespace ProgettoPCTOApp
     /// </summary>
     public partial class FinestraLogin : Window
     {
+        gestioneFile listaRegistrati;
+        Utente temp;
+
+
         private void InitializeMyControl()
         {
             txtPassword.MaxLength = 14;
@@ -31,27 +35,23 @@ namespace ProgettoPCTOApp
 
 
         }
+        public FinestraLogin(gestioneFile pass)
+        {
+
+            InitializeComponent();
+
+            listaRegistrati = pass;
+
+
+        }
 
         private void BtnAccedi_Click(object sender, RoutedEventArgs e)
         {
-            string nometxt = txtNome.Text;
+            string id = txtNome.Text;
 
             string cognometxt = txtCognome.Text;
-            string nome = "";
             string cognome = "";
-            for (int i = 0; i <= nometxt.Length; i++)
-            {
-                if (i == 0)
-                {
-                    nome = nome + nome.Substring(0, 1).ToUpper();
-
-                }
-                else
-                {
-                    nome = nome + nome.Substring(i, 1).ToLower();
-
-                }
-            }
+   
 
 
             for (int i = 0; i <= cognometxt.Length; i++)
@@ -70,10 +70,21 @@ namespace ProgettoPCTOApp
 
             string password = txtPassword.Password.ToString();
 
+            Utente u = new Utente("", cognome, "", "", password, id, 0.0f, null);
 
+            if (listaRegistrati.isResistrato(u) == true)
+            {
+                temp = listaRegistrati.getUtente(u);
 
+                FinestraAreaRiservata finestra = new FinestraAreaRiservata(temp, listaRegistrati);
+                finestra.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("non sei registrato, torna alla schermata principale e registrati");
+            }
 
-           
 
 
 

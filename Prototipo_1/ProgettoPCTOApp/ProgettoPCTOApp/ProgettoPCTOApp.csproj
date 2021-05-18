@@ -57,6 +57,9 @@
     </ApplicationDefinition>
     <Compile Include="Biglietto.cs" />
     <Compile Include="Credito.cs" />
+    <Compile Include="FinestraAreaRiservata.xaml.cs">
+      <DependentUpon>FinestraAreaRiservata.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FinestraLogin.xaml.cs">
       <DependentUpon>FinestraLogin.xaml</DependentUpon>
     </Compile>
@@ -65,6 +68,10 @@
     </Compile>
     <Compile Include="gestioneFile.cs" />
     <Compile Include="Utente.cs" />
+    <Page Include="FinestraAreaRiservata.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FinestraLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

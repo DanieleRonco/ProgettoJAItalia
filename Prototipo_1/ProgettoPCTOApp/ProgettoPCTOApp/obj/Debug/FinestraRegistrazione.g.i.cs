@@ -112,6 +112,14 @@ namespace ProgettoPCTOApp {
         #line default
         #line hidden
         
+        
+        #line 27 "..\..\FinestraRegistrazione.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox txtSaldo;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -180,6 +188,9 @@ namespace ProgettoPCTOApp {
             return;
             case 9:
             this.txtConferma = ((System.Windows.Controls.PasswordBox)(target));
+            return;
+            case 10:
+            this.txtSaldo = ((System.Windows.Controls.TextBox)(target));
             return;
             }
             this._contentLoaded = true;

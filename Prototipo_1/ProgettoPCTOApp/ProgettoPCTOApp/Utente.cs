@@ -15,7 +15,8 @@ namespace ProgettoPCTOApp
         private string password;
         private string codFiscale;
         private Biglietto biglietto;
-        private Credito carta;
+        private float saldo;
+        //private Credito carta;
 
         public Utente()
         {
@@ -37,7 +38,7 @@ namespace ProgettoPCTOApp
             this.codFiscale = codFiscale;
         }
 
-        public Utente(string nome, string cognome, string nascita, string email,string password,string codFiscale,Credito carta,Biglietto biglietto)
+        public Utente(string nome, string cognome, string nascita, string email,string password,string codFiscale,float saldo,Biglietto biglietto)
         {
             this.nome = nome;
             this.cognome = cognome;
@@ -45,7 +46,7 @@ namespace ProgettoPCTOApp
             this.email = email;
             this.password = password;
             this.codFiscale = codFiscale;
-            this.carta = carta;
+            this.saldo = saldo;
             
             if (biglietto==null)
             {
@@ -84,6 +85,10 @@ namespace ProgettoPCTOApp
         {
             return codFiscale;
         }
+        public float getSaldo()
+        {
+            return saldo;
+        }
 
         public override string ToString()
         {
@@ -95,7 +100,7 @@ namespace ProgettoPCTOApp
         public string ToCsv()
         {
             string tmp;
-            tmp = nome + ";" + cognome + ";" + nascita + ";" + email + ";" + password + ";" + codFiscale+";"+carta.ToCsv()+";"+biglietto.ToCsv();
+            tmp = nome + ";" + cognome + ";" + nascita + ";" + email + ";" + password + ";" + codFiscale+";"+saldo+";"+biglietto.ToCsv();
             return tmp;
         }
 

@@ -24,6 +24,8 @@
         <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="66,185,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
         <PasswordBox x:Name="txtConferma" HorizontalAlignment="Left" Margin="230,185,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
         <Image Margin="609,36,24.333,343.667" Source="logo_large.png" Stretch="Fill"/>
+        <TextBox x:Name="txtSaldo" HorizontalAlignment="Left" Height="23" Margin="230,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Saldo" HorizontalAlignment="Left" Margin="230,213,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
