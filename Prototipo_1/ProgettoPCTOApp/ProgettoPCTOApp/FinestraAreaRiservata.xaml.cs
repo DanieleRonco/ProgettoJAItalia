@@ -44,7 +44,26 @@ namespace ProgettoPCTOApp
             b= u.getBiglietto();
             tariffa= b.getTariffa();
             indice = b.getIndice();
-            lblTariffa.Content = tariffa;
+            if (b.getTariffa() == "s")
+            {
+                lblTariffa.Content = "Settimanale";
+                lblIndice.Content = indice.ToString();
+            }
+            else if (b.getTariffa() == "g")
+            {
+                lblTariffa.Content = "Giornaliero";
+                lblIndice.Content = indice.ToString();
+            }
+            else if (b.getTariffa() == "m")
+            {
+                lblTariffa.Content = "Mensile";
+                lblIndice.Content = indice.ToString();
+            }
+            else {
+
+                lblTariffa.Content = "NESSUNO";
+                lblIndice.Content = "NESSUNO";
+            }
             lblIndice.Content = indice.ToString();
             lblSaldo.Content = u.getSaldo().ToString() + " €";
             saldo = u.getSaldo();
@@ -53,19 +72,7 @@ namespace ProgettoPCTOApp
             cmbTariffa.Items.Add("Mensile");
 
 
-            if (cmbTariffa.Text == "Giornaliero")
-            {
-                tariffa = "g";
-            }
-            if (cmbTariffa.Text == "Settimanale")
-            {
-                tariffa = "s";
-            }
-            if (cmbTariffa.Text == "Mensile")
-            {
-                tariffa = "m";
-
-            }
+           
 
 
         }
@@ -79,7 +86,7 @@ namespace ProgettoPCTOApp
 
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
+            MainWindow main = new MainWindow(g);
             main.Show();
             this.Hide();
         }
@@ -106,24 +113,37 @@ namespace ProgettoPCTOApp
 
         private void CmbTariffa_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (cmbTariffa.Text == "Giornaliero") {
+            if (cmbTariffa.SelectedIndex == 0) {
 
                 lblCosto.Content = "2 €";
                 costo = 2;
             }
-            if (cmbTariffa.Text == "Settimanale")
+            if (cmbTariffa.SelectedIndex == 1)
             {
 
                 lblCosto.Content = "15 €";
                 costo = 15;
             }
-            if (cmbTariffa.Text == "Mensile")
+            if (cmbTariffa.SelectedIndex == 2)
             {
 
                 lblCosto.Content = "40 €";
                 costo = 40;
             }
+            if (cmbTariffa.Text == "Giornaliero")
+            {
+                tariffa = "g";
+            }
+            if (cmbTariffa.Text == "Settimanale")
+            {
+                tariffa = "s";
+            }
+            if (cmbTariffa.Text == "Mensile")
+            {
+                tariffa = "m";
 
+            }
+            btnCompra.IsEnabled = true;
         }
     }
 }

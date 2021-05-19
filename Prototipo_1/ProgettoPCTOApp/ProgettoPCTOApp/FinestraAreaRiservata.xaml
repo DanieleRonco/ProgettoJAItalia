@@ -8,21 +8,21 @@
         Title="FinestraAreaRiservata" Height="450" Width="800">
     <Grid>
         <Image x:Name="imgUser" Margin="10,10,736.6,378" Source="user.png" Stretch="Fill"/>
-        <Label x:Name="lblUtente" Content="" HorizontalAlignment="Left" Margin="62,10,0,0" VerticalAlignment="Top" Height="32" Width="44"/>
+        <Label x:Name="lblUtente" Content="" HorizontalAlignment="Left" Margin="62,10,0,0" VerticalAlignment="Top" Height="32" Width="241"/>
         <Image Margin="610,10,24.6,372" Source="logo_large.png" Stretch="Fill"/>
-        <Label x:Name="lblTime" Content="" HorizontalAlignment="Left" Margin="333,10,0,0" VerticalAlignment="Top" Height="38" Width="114" FontFamily="Segoe UI Symbol" FontSize="20" FontWeight="Bold"/>
-        <Button x:Name="btnHome" Content="Torna Indietro" HorizontalAlignment="Left" Margin="29,359,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="btnHome_Click"/>
-        <Label Content="BIGLIETTO CORRENTE" HorizontalAlignment="Left" Margin="154,111,0,0" VerticalAlignment="Top"/>
-        <Label Content="NUOVO BIGLIETTO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,111,0,0" Width="130"/>
+        <Label x:Name="lblTime" Content="" HorizontalAlignment="Left" Margin="324,10,0,0" VerticalAlignment="Top" Height="38" Width="114" FontFamily="Segoe UI Symbol" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnHome" Content="ESCI" HorizontalAlignment="Left" Margin="29,359,0,0" VerticalAlignment="Top" Width="68" Height="35" Click="btnHome_Click" FontWeight="Bold"/>
+        <Label Content="BIGLIETTO CORRENTE:" HorizontalAlignment="Left" Margin="123,109,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <Label Content="NUOVO BIGLIETTO:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="466,111,0,0" Width="192" FontWeight="Bold" FontSize="18"/>
         <Label Content="Tariffa:" HorizontalAlignment="Left" Margin="111,148,0,0" VerticalAlignment="Top"/>
         <Label Content="Indice:" HorizontalAlignment="Left" Margin="111,179,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblTariffa" Content="" HorizontalAlignment="Left" Margin="185,148,0,0" VerticalAlignment="Top" BorderBrush="Black" Width="78"/>
         <Label x:Name="lblIndice" Content="" HorizontalAlignment="Left" Margin="185,179,0,0" VerticalAlignment="Top" Width="78"/>
         <ComboBox x:Name="cmbTariffa" HorizontalAlignment="Left" Margin="510,150,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbTariffa_SelectionChanged"/>
         <Label Content="Tariffa:" HorizontalAlignment="Left" Margin="455,150,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCompra" Content="Compra biglietto" HorizontalAlignment="Left" Margin="521,252,0,0" VerticalAlignment="Top" Width="100" Click="btnCompra_Click"/>
+        <Button x:Name="btnCompra" Content="Compra biglietto" HorizontalAlignment="Left" Margin="521,252,0,0" VerticalAlignment="Top" Width="100" Click="btnCompra_Click" IsEnabled="False"/>
         <Label Content="Costo:" HorizontalAlignment="Left" Margin="455,187,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblSaldo" Content="" HorizontalAlignment="Left" Margin="154,296,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblSaldo" Content="" HorizontalAlignment="Left" Margin="154,296,0,0" VerticalAlignment="Top" Width="242"/>
         <Label Content="Saldo corrente:" HorizontalAlignment="Left" Margin="154,270,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblCosto" Content="" HorizontalAlignment="Left" Margin="510,187,0,0" VerticalAlignment="Top" Width="120"/>
 

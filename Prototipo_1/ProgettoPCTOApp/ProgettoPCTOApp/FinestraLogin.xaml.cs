@@ -48,10 +48,11 @@ namespace ProgettoPCTOApp
             string id = txtNome.Text;
 
             string cognome = txtCognome.Text;
-           // string cognome = "";
+            /*
+            string cognome = "";
    
 
-            /*
+            
             for (int i = 0; i <= cognometxt.Length; i++)
             {
                 if (i == 0)
@@ -61,11 +62,11 @@ namespace ProgettoPCTOApp
                 }
                 else
                 {
-                    cognome = cognome + cognome.Substring(i, 1).ToLower();
+                    cognome = cognome + cognome.Substring(i, i+1).ToLower();
 
                 }
             }
-            */
+         */
 
             string password = txtPassword.Password.ToString();
 
@@ -96,7 +97,7 @@ namespace ProgettoPCTOApp
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
             
-                MainWindow main = new MainWindow();
+                MainWindow main = new MainWindow(listaRegistrati);
                 main.Show();
                 this.Hide();
             
