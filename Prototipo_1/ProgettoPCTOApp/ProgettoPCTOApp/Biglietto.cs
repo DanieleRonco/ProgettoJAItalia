@@ -34,6 +34,12 @@ namespace ProgettoPCTOApp
         {
             return indice;
         }
+        public void setBiglietto(string tariffa, int indice)
+        {
+            this.tariffa = tariffa;
+            this.indice = indice;
+
+        }
         public override string ToString()
         {
             string tmp;

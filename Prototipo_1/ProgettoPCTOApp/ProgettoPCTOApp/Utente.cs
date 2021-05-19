@@ -56,6 +56,13 @@ namespace ProgettoPCTOApp
                 this.biglietto = biglietto;
             }
         }
+        public void aggiornaUtente(float saldo, Biglietto biglietto)
+        {
+           
+            this.saldo = saldo;
+            this.biglietto = biglietto;
+            
+        }
 
         public string getNome()
         {
@@ -79,8 +86,12 @@ namespace ProgettoPCTOApp
         {
             return password;
         }
+        public Biglietto getBiglietto()
+        {
+            return biglietto;
+        }
 
-     
+
         public string getCodFiscale()
         {
             return codFiscale;
