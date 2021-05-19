@@ -27,7 +27,18 @@ namespace ProgettoPCTOApp
         {
             registrati = new gestioneFile();
             InitializeComponent();
+            Biglietto temp = new Biglietto("m", 12);
+            Utente utente1 = new Utente("Riccardo", "Camagni", " 18 / 29 / 0000", "miamael @gmail.com", "password", "123456", 10, temp);
+            registrati.registra(utente1);
+
             OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                registrati.set_nome_file(openFileDialog.FileName);
+                registrati.Salva();
+            }
+
+            
             if (openFileDialog.ShowDialog() == true)
             {
                 registrati.set_nome_file(openFileDialog.FileName);

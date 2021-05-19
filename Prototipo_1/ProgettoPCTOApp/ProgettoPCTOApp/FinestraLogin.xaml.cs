@@ -47,11 +47,11 @@ namespace ProgettoPCTOApp
         {
             string id = txtNome.Text;
 
-            string cognometxt = txtCognome.Text;
-            string cognome = "";
+            string cognome = txtCognome.Text;
+           // string cognome = "";
    
 
-
+            /*
             for (int i = 0; i <= cognometxt.Length; i++)
             {
                 if (i == 0)
@@ -65,6 +65,7 @@ namespace ProgettoPCTOApp
 
                 }
             }
+            */
 
             string password = txtPassword.Password.ToString();
 

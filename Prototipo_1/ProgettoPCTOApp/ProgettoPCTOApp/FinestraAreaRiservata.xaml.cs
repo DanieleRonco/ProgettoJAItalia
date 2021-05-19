@@ -53,6 +53,20 @@ namespace ProgettoPCTOApp
             cmbTariffa.Items.Add("Mensile");
 
 
+            if (cmbTariffa.Text == "Giornaliero")
+            {
+                tariffa = "g";
+            }
+            if (cmbTariffa.Text == "Settimanale")
+            {
+                tariffa = "s";
+            }
+            if (cmbTariffa.Text == "Mensile")
+            {
+                tariffa = "m";
+
+            }
+
 
         }
 

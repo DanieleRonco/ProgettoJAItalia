@@ -16,7 +16,7 @@ namespace ProgettoPCTOApp
         public gestioneFile()
         {
             lista = new List<Utente>();
-            nomeFile = "";
+            nomeFile = "";          
         }
 
         public void registra(Utente utente)
@@ -61,7 +61,7 @@ namespace ProgettoPCTOApp
                 string[] campi = linea.Split(';');
 
                 temp = new Biglietto(campi[7], int.Parse(campi[8]));
-                pTemp = new Utente(campi[0], campi[1], campi[2], (campi[3]), campi[4], campi[5],float.Parse(campi[6]),temp);
+                pTemp = new Utente(campi[0], campi[1], campi[2], campi[3], campi[4], campi[5],float.Parse(campi[6]),temp);
                 lista.Add(pTemp);
             }
         }
