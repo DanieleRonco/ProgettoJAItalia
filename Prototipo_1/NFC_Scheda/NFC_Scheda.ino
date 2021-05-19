@@ -7,14 +7,17 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);
 MFRC522::MIFARE_Key key;
 MFRC522::StatusCode status;
 
-//byte blockDataNome[16] = {"Daniele"};
-//byte blockDataCognome[16] = {"Roncoroni"};
-//byte blockDataID[16] = {"15"};
-//byte blockDataAbbonamento[16] = {"2"};
-//byte blockDataFineAbbonamento[16] = {"20210615"};
-//byte blockDataCredito[16] = {"23"};
+/*
+byte blockDataNome[16] = {"Daniele"};
+byte blockDataCognome[16] = {"Roncoroni"};
+byte blockDataID[16] = {"15"};
+byte blockDataAbbonamento[16] = {"2"};
+byte blockDataFineAbbonamento[16] = {"20210615"};
+byte blockDataCredito[16] = {"23"};
+*/
 byte readBlockData[18];
 byte bufferLen = 18;
+
 
 String UID = "";
 #define bloccoNome 4
@@ -23,6 +26,8 @@ String UID = "";
 #define bloccoAbbonamento 8 //0 no, 1 settimanale, 2 mensile, 3 annuale
 #define bloccoFineAbbonamento 9 //data in formato aaaammgg
 #define bloccoCredito 10
+#define numeriBlocchi 6
+int VettoreNumeriBlocchi[numeriBlocchi] = {bloccoNome, bloccoCognome, bloccoID, bloccoAbbonamento, bloccoFineAbbonamento, bloccoCredito};
 
 String stringaSeriale = "";
 String accesso = "";
@@ -84,7 +89,7 @@ void loop()
     */
     
     //Serial.println("Lettura Dati da Scheda Blocco 2");
-    ReadDataFromBlock(bloccoNome, readBlockData);
+    /*ReadDataFromBlock(bloccoNome, readBlockData);
     stringaSeriale.concat(String((char*)readBlockData) + ";");
     ReadDataFromBlock(bloccoCognome, readBlockData);
     stringaSeriale.concat(String((char*)readBlockData) + ";");
@@ -95,7 +100,12 @@ void loop()
     ReadDataFromBlock(bloccoFineAbbonamento, readBlockData);
     stringaSeriale.concat(String((char*)readBlockData) + ";");
     ReadDataFromBlock(bloccoCredito, readBlockData);
-    stringaSeriale.concat(String((char*)readBlockData) + ";");
+    stringaSeriale.concat(String((char*)readBlockData) + ";");*/
+
+    for(int i = 0; i < numeriBlocchi; i++){
+      ReadDataFromBlock(VettoreNumeriBlocchi[i], readBlockData);
+      stringaSeriale.concat(String((char*)readBlockData) + ";");
+    }
 
     Serial.println(stringaSeriale);
 
@@ -119,6 +129,6 @@ void loop()
   }
 
   while (Serial.available() == 0);
-  accesso = Serial.readStringUntil('\n');
+  accesso = Serial.readStringUntil('\n'); //DA CAMBIARE '\n' con ';'!
   OutputAccesso();
 }
