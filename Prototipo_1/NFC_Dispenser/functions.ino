@@ -64,6 +64,8 @@ void WriteAllCardData()
   Serial.println();
 }
 
+
+/* Funzione per l'output sonoro */
 void OutputAccesso() {  
   tone(Buzzer, 3000, 500);
 }
