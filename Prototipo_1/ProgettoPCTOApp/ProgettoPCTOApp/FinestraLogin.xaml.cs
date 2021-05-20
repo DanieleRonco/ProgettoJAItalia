@@ -102,5 +102,25 @@ namespace ProgettoPCTOApp
                 this.Hide();
             
         }
+
+        private void TxtNome_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtCognome.Text != "" && txtNome.Text != "")
+            {
+                btnAccedi.IsEnabled = true;
+            }
+            else { btnAccedi.IsEnabled = false; }
+        }
+
+        private void TxtCognome_TextChanged(object sender, TextChangedEventArgs e)
+        {
+          
+                if (txtCognome.Text != "" && txtNome.Text != "")
+                {
+                    btnAccedi.IsEnabled = true;
+                }
+                else { btnAccedi.IsEnabled = false; }
+            
+        }
     }
 }

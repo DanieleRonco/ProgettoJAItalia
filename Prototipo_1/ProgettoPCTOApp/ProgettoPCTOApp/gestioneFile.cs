@@ -11,12 +11,12 @@ namespace ProgettoPCTOApp
     {
 
         private List<Utente> lista;
-        private string nomeFile;
+        private static string nomeFile = Directory.GetCurrentDirectory() + "\\dati.txt";
 
         public gestioneFile()
         {
             lista = new List<Utente>();
-            nomeFile = "";          
+              
         }
 
         public void registra(Utente utente)
@@ -39,11 +39,7 @@ namespace ProgettoPCTOApp
         {
             File.WriteAllText(nomeFile, this.GetAllCsv());
         }
-
-        public void set_nome_file(string nomeFile)
-        {
-            this.nomeFile = nomeFile;
-        }
+        
 
         public void Carica()
         {

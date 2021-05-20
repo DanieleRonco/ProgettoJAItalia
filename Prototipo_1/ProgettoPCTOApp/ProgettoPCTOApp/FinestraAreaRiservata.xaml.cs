@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -16,6 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.Runtime;
 
 namespace ProgettoPCTOApp
 {
@@ -105,9 +107,8 @@ namespace ProgettoPCTOApp
             b.setBiglietto(tariffa,indice);
             u.aggiornaUtente(saldo, b);
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            if (saveFileDialog.ShowDialog() == true)
-            { g.set_nome_file(saveFileDialog.FileName);
-                g.Salva(); }
+           
+                g.Salva();
             b = u.getBiglietto();
             tariffa = b.getTariffa();
             indice = b.getIndice();
@@ -149,7 +150,6 @@ namespace ProgettoPCTOApp
             }
             if (cmbTariffa.SelectedIndex == 1)
             {
-
                 lblCosto.Content = "15 €";
                 costo = 15;
                 tariffa = "s";
@@ -164,5 +164,7 @@ namespace ProgettoPCTOApp
           
             btnCompra.IsEnabled = true;
         }
+        
     }
+   
 }

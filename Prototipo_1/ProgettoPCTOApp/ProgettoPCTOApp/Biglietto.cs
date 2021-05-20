@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
+
+
 
 namespace ProgettoPCTOApp
 {
     public class Biglietto
     {
 
-        private string tariffa;  // se G = giornaliero se S= settimanale M= mensile
+        private string tariffa;  // se G = giornaliero se S= settimanale se M= mensile
         private int indice;    // in base alla tariffa
 
         public Biglietto()
@@ -53,5 +56,6 @@ namespace ProgettoPCTOApp
             tmp = tariffa + ";" + indice ;
             return tmp;
         }
+       
     }
 }

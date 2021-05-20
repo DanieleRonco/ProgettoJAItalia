@@ -118,5 +118,50 @@ namespace ProgettoPCTOApp
             main.Show();
             this.Hide();
         }
+
+        private void TxtNome_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtCognome.Text != "" && txtNome.Text != "" && txtSaldo.Text != "" && txtPassword.Password.ToString() != "" && txtConferma.Password.ToString() != "" && txtEmail.Text != "" && txtFiscale.Text != "" && txtNascita.Text != "")
+            {
+                btnCreaAcc.IsEnabled = true;
+            }
+            else { btnCreaAcc.IsEnabled = false; }
+        }
+
+        private void TxtCognome_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtCognome.Text != "" && txtNome.Text != "" && txtSaldo.Text != "" && txtPassword.Password.ToString() != "" && txtConferma.Password.ToString() != "" && txtEmail.Text != "" && txtFiscale.Text != "" && txtNascita.Text != "")
+            {
+                btnCreaAcc.IsEnabled = true;
+            }
+            else { btnCreaAcc.IsEnabled = false; }
+        }
+
+        private void TxtEmail_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtCognome.Text != "" && txtNome.Text != "" && txtSaldo.Text != "" && txtPassword.Password.ToString() != "" && txtConferma.Password.ToString() != "" && txtEmail.Text != "" && txtFiscale.Text != "" && txtNascita.Text != "")
+            {
+                btnCreaAcc.IsEnabled = true;
+            }
+            else { btnCreaAcc.IsEnabled = false; }
+        }
+
+        private void TxtFiscale_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtCognome.Text != "" && txtNome.Text != "" && txtSaldo.Text != "" && txtPassword.Password.ToString() != "" && txtConferma.Password.ToString() != "" && txtEmail.Text != "" && txtFiscale.Text != "" && txtNascita.Text != "")
+            {
+                btnCreaAcc.IsEnabled = true;
+            }
+            else { btnCreaAcc.IsEnabled = false; }
+        }
+
+        private void TxtSaldo_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtCognome.Text != "" && txtNome.Text != "" && txtSaldo.Text != "" && txtPassword.Password.ToString() != "" && txtConferma.Password.ToString() != "" && txtEmail.Text != "" && txtFiscale.Text != "" && txtNascita.Text != "")
+            {
+                btnCreaAcc.IsEnabled = true;
+            }
+            else { btnCreaAcc.IsEnabled = false; }
+        }
     }
 }

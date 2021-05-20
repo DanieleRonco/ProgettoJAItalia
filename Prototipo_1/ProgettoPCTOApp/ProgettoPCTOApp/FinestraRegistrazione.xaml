@@ -8,23 +8,23 @@
         Title="FinestraRegistrazione" Height="450" Width="800">
     <Grid>
         <Label Content="Inserire Nome" HorizontalAlignment="Left" Margin="66,36,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="66,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="66,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtNome_TextChanged"/>
         <Label Content="Inserire Cognome" HorizontalAlignment="Left" Margin="230,36,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.671,-1.058"/>
-        <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Height="23" Margin="230,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="230,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Height="23" Margin="230,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtCognome_TextChanged"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="230,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtEmail_TextChanged"/>
         <Label Content="Inserire Data di nascita" HorizontalAlignment="Left" Margin="66,95,0,0" VerticalAlignment="Top"/>
         <Label Content="Inserire Email" HorizontalAlignment="Left" Margin="230,95,0,0" VerticalAlignment="Top"/>
         <Label Content="Inserire Password" HorizontalAlignment="Left" Margin="66,154,0,0" VerticalAlignment="Top"/>
         <Label Content="Conferma Password" HorizontalAlignment="Left" Margin="230,154,0,0" VerticalAlignment="Top"/>
         <Label Content="Inserire Codice Fiscale" HorizontalAlignment="Left" Margin="66,213,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtFiscale" HorizontalAlignment="Left" Height="23" Margin="66,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.437,8.168"/>
-        <Button x:Name="btnCreaAcc" Content="Registrati" HorizontalAlignment="Left" Margin="66,300,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="BtnCreaAcc_Click"/>
+        <TextBox x:Name="txtFiscale" HorizontalAlignment="Left" Height="23" Margin="66,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.437,8.168" TextChanged="TxtFiscale_TextChanged"/>
+        <Button x:Name="btnCreaAcc" Content="Registrati" HorizontalAlignment="Left" Margin="66,300,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="BtnCreaAcc_Click" IsEnabled="False"/>
         <DatePicker x:Name="txtNascita" HorizontalAlignment="Left" Margin="66,126,0,0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnHome" Content="INDIETRO" HorizontalAlignment="Left" Margin="666,300,0,0" VerticalAlignment="Top" Width="85" Height="35" Click="btnHome_Click" FontWeight="Bold"/>
         <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="66,185,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
         <PasswordBox x:Name="txtConferma" HorizontalAlignment="Left" Margin="230,185,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
         <Image Margin="609,36,24.333,343.667" Source="logo_large.png" Stretch="Fill"/>
-        <TextBox x:Name="txtSaldo" HorizontalAlignment="Left" Height="23" Margin="230,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtSaldo" HorizontalAlignment="Left" Height="23" Margin="230,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TxtSaldo_TextChanged"/>
         <Label Content="Saldo" HorizontalAlignment="Left" Margin="230,213,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblRegistrazione" Content="REGISTRAZIONE" HorizontalAlignment="Left" Margin="406,142,0,0" VerticalAlignment="Top" Height="80" Width="378" FontSize="48" FontFamily="Sitka Subheading"/>
 
