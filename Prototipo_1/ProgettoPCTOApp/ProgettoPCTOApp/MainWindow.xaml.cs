@@ -36,15 +36,13 @@ namespace ProgettoPCTOApp
             {
                 registrati.set_nome_file(openFileDialog.FileName);
                 registrati.Salva();
+                registrati.Carica();
+
+
             }
 
             
-            if (openFileDialog.ShowDialog() == true)
-            {
-                registrati.set_nome_file(openFileDialog.FileName);
-                registrati.Carica();
-            }
-
+     
         }
         public MainWindow(gestioneFile gf)
         {

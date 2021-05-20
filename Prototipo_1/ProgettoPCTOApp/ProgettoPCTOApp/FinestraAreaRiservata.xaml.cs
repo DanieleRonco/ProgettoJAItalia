@@ -108,41 +108,60 @@ namespace ProgettoPCTOApp
             if (saveFileDialog.ShowDialog() == true)
             { g.set_nome_file(saveFileDialog.FileName);
                 g.Salva(); }
+            b = u.getBiglietto();
+            tariffa = b.getTariffa();
+            indice = b.getIndice();
+            if (b.getTariffa() == "s")
+            {
+                lblTariffa.Content = "Settimanale";
+                lblIndice.Content = indice.ToString();
+              
+            }
+            else if (b.getTariffa() == "g")
+            {
+                lblTariffa.Content = "Giornaliero";
+                lblIndice.Content = indice.ToString();
+            }
+            else if (b.getTariffa() == "m")
+            {
+                lblTariffa.Content = "Mensile";
+                lblIndice.Content = indice.ToString();
+            }
+            else
+            {
 
+                lblTariffa.Content = "NESSUNO";
+                lblIndice.Content = "NESSUNO";
+            }
+            lblIndice.Content = indice.ToString();
+            lblSaldo.Content = u.getSaldo().ToString() + " €";
+            saldo = u.getSaldo();
         }
 
         private void CmbTariffa_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (cmbTariffa.SelectedIndex == 0) {
-
+                indice = DateTime.Now.Day;
+              
                 lblCosto.Content = "2 €";
                 costo = 2;
+                tariffa = "g";
             }
             if (cmbTariffa.SelectedIndex == 1)
             {
 
                 lblCosto.Content = "15 €";
                 costo = 15;
+                tariffa = "s";
             }
             if (cmbTariffa.SelectedIndex == 2)
             {
-
+                indice = DateTime.Now.Month;
                 lblCosto.Content = "40 €";
                 costo = 40;
-            }
-            if (cmbTariffa.Text == "Giornaliero")
-            {
-                tariffa = "g";
-            }
-            if (cmbTariffa.Text == "Settimanale")
-            {
-                tariffa = "s";
-            }
-            if (cmbTariffa.Text == "Mensile")
-            {
                 tariffa = "m";
-
             }
+          
             btnCompra.IsEnabled = true;
         }
     }

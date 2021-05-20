@@ -10,7 +10,7 @@
         <Image x:Name="imgUser" Margin="10,10,736.6,378" Source="user.png" Stretch="Fill"/>
         <Label x:Name="lblUtente" Content="" HorizontalAlignment="Left" Margin="62,10,0,0" VerticalAlignment="Top" Height="32" Width="241"/>
         <Image Margin="610,10,24.6,372" Source="logo_large.png" Stretch="Fill"/>
-        <Label x:Name="lblTime" Content="" HorizontalAlignment="Left" Margin="324,10,0,0" VerticalAlignment="Top" Height="38" Width="114" FontFamily="Segoe UI Symbol" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="lblTime" Content="" HorizontalAlignment="Left" Margin="345,10,0,0" VerticalAlignment="Top" Height="38" Width="114" FontFamily="Sitka Subheading" FontSize="20" FontWeight="Bold"/>
         <Button x:Name="btnHome" Content="ESCI" HorizontalAlignment="Left" Margin="29,359,0,0" VerticalAlignment="Top" Width="68" Height="35" Click="btnHome_Click" FontWeight="Bold"/>
         <Label Content="BIGLIETTO CORRENTE:" HorizontalAlignment="Left" Margin="123,109,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
         <Label Content="NUOVO BIGLIETTO:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="466,111,0,0" Width="192" FontWeight="Bold" FontSize="18"/>
