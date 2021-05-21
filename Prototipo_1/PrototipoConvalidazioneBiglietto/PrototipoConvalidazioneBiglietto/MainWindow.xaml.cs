@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,13 +16,11 @@ using System.Windows.Shapes;
 
 namespace PrototipoConvalidazioneBiglietto
 {
-    /// <summary>
-    /// Logica di interazione per MainWindow.xaml
-    /// </summary>
+   
     public partial class MainWindow : Window
     {
         UtenteLetto utenteDaVerificare;
-   
+        SerialPort com;
         
 
         public MainWindow()
@@ -30,6 +29,36 @@ namespace PrototipoConvalidazioneBiglietto
 
             utenteDaVerificare = new UtenteLetto();
   
+
+        }
+        private void com_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            string s = com.ReadExisting();
+            string[] campi = s.Split(';');
+            utenteDaVerificare = new UtenteLetto(campi[0], campi[1], campi[2], campi[3], int.Parse(campi[4]), float.Parse(campi[5]));
+
+            if ((utenteDaVerificare.getTipoAbbonamento() == "g") && (utenteDaVerificare.getIndice() == DateTime.Now.Day))
+            {
+                MessageBox.Show("Biglietto valido");
+                com.Write("OK");
+            }
+
+            else if ((utenteDaVerificare.getTipoAbbonamento() == "m") && (utenteDaVerificare.getIndice() == DateTime.Now.Month))
+            {
+
+                MessageBox.Show("Biglietto valido");
+                com.Write("OK");
+
+            }
+
+            //qui andrebbe il controllo del settimanale
+
+            else
+            {
+                MessageBox.Show("Biglietto non valido");
+                com.Write("KO");
+            }
+
 
         }
 
