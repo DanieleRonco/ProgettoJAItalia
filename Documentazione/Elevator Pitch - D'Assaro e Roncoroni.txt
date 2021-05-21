@@ -1,0 +1,15 @@
+ELEVATOR PITCH
+
+Uno dei principali problemi nell'utilizzo dei mezzi pubblici è l'acquisto dei biglietti e il rinnovo degli abbonamenti.
+	Spesso capita, soprattutto agli studenti o a coloro che utilizzano i mezzi frequentemente, di doversi svegliare
+	presto la mattina per dover recarsi dal tabaccaio e ottenere l'abbonamento. A coloro che invece utilizzano il pullman
+	saltuariamente, quando la decisione viene presa all'ultimo momento, spesso capita di non trovare rapidamente
+	il punto di rivendita.
+La nostra applicazione, ovvero PayBus, è pensata proprio per risolvere questi problemi. Si tratta dell'unica innovazione
+	del suo genere presente su tutto il territorio comasco, e permette quindi di acquistare biglietti o abbonamenti con
+	pochi click in breve tempo, comodamente da casa o anche poco prima di salire sul pullman, incentivando l'utilizzo
+	dei mezzi di trasporto anche per una decisione presa all'ultimo momento.
+Siamo certi che la nostra applicazione, lanciata sul mercato, possa riscuotere un grande successo, soprattutto tra i 
+	più giovani che amano la tecnologia, ma la seplicità di utilizzo non esclude le persone meno avvezze all'utilizzo
+	dello smartphone. Con il giusto appoggio e il giusto Team di giovani intraprendenti, la nostra idea potrà anche 
+	diffondersi bel oltre il limitato territorio comasco.

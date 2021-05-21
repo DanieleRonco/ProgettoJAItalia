@@ -7,18 +7,18 @@ Requisiti funzionali:
 	- [MUST] Il cliente aggiunge soldi alla propria carta virtuale collegata al proprio account.
 	- [MUST] Il cliente acquista un biglietto o un abbonamento.
 	- [MUST] Il cliente visualizza il biglietto o l'abbonamento corrente.
+	- [MUST] Il cliente convalida il biglietto avvicinandolo al lettore NFC.
 	- [MAY] Il cliente visualizza su di una mappa i percorsi di tutte le tratte disponibili.
-	- [MUST] Il sistema verifica la correttezza del biglietto o dell'abbonamento dell'utente.
-	- [MUST] Il sistema cancella il biglietto o l'abbonamento dell'utente non più valido.
-	- [MAY] Il sistema deve consentire all'utente di recuperare la password dimenticata.
+	- [SHOULD] Il cliente può recuperare la password dimenticata.
 	- [SHOULD] Il cliente scarica l'applicazione da un sito Internet.
 
 Requisiti Non-Funzionali:
+	- [MUST] Il sistema cancella il biglietto o l'abbonamento dell'utente non più valido.
 	- [MUST] Il controllo della validità di un biglietto deve avvenire in un tempo inferiore a un secondo.
-	- [MUST] Il sistema mantiene memorizzati tutti gli account creati dagli utenti e le informazioni di ciascuno in un database.
+	- [MUST] Il sistema mantiene memorizzati tutti gli account creati dagli utenti e le informazioni di ciascuno in un database (file).
 	- [MAY] Il sistema deve mantiene memorizzati tutti gli account creati dagli utenti e le informazioni di ciascuno su di un server.
 
 Requisiti Tecnologici:
-	- Linguaggio di programmazione C# per l'applicazione dell'utente e il programma del sistema.
-	- Linguaggio di programmazione C++ per le funzionalità della postazione di controllo (Arduino).
-	- Sensore NFC nel dispositivo dell'utente e nella postazione di controllo (lettore NFC collegato ad Arduino).
+	- [MUST] Linguaggio di programmazione C# per l'applicazione dell'utente e il programma del sistema.
+	- [MUST] Linguaggio di programmazione C++ (Arduino) per le funzionalità dell'NFC del dispositivo dell'utente e della postazione di controllo.
+	- [MUST] Sensore NFC nel dispositivo dell'utente e nella postazione di controllo (lettore NFC collegato ad Arduino).

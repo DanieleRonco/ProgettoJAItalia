@@ -2,5 +2,5 @@ Value Proposition
 
 I clienti dovrebbero scegliere di utilizzare il nostro servizio per l'unicità della nostra proposta; su tutto il territorio comasco, si tratta infatti dell'unica 
 	proposta concreta di sviluppo tecnologico in questa direzione, al fine di agevolare l'esperienza di utilizzo del cliente, dai più giovani alle persone
-	meno avvezze alla tecnologia. La nostra proposta, inoltre, vuole sfruttare le innovazioni dell'NFC, una nuova tecnologia che consente ai clienti di comprare
+	meno avvezze alla tecnologia. La nostra proposta, inoltre, vuole sfruttare le innovazioni dell'NFC, una nuova tecnologia che consente ai clienti di acquistare
 	biglietti o abbonamenti in maniera facile, rapida e, soprattutto, sicura.

@@ -40,7 +40,7 @@ Customer Journey Map
 
 - Obiettivi: Hanno visto l'applicazione e hanno subito pensato fosse un ottimo modo per provare una nuova esperienza di utilizzo dei mezzi pubblici, 
 	ma soprattutto una maniera per semplificare l'acquisto dei biglietti e degli abbonamenti: con l'applicazione possono acquistarli semplicemente
-	da casa, senza doversi svegliare presto la mattina per recarsi a comprarli dal tabaccaio.
+	da casa, senza doversi svegliare presto la mattina per recarsi a comprarli dal tabaccaio, oppure dover incaricarene i genitori.
 
 - Azioni: Dopo aver conosciuto l'applicazione, e aver riconosciuto la sua utilità, hanno deciso di scaricarla dal servizio di distribuzione
 	digitale presente sui loro smartphone. Dopo aver creato un account e aver collegato ad esso il metodo di pagamento, ovviamente richiedendo il 
@@ -50,7 +50,7 @@ Customer Journey Map
 
 - Oggetti: Si necessita di uno smartphone di ultima generazione, dotato di tecnologia NFC.
 
-- Persone: Lo YouTuber che ha sponsorizzato l'applicazione, il conducente del mezzo che, in caso di difficoltà, ha aiutato gli studenti ad 
+- Persone: Lo studente, lo YouTuber che ha sponsorizzato l'applicazione, il conducente del mezzo che, in caso di difficoltà, ha aiutato gli studenti ad 
 	utilizzare l'applicazione.
 
 - Emozioni: Subito dopo aver visto l'applicazione, erano curiosi di provarla, perché era un'applicazione che rispondeva a tutte le loro esigenze, 
