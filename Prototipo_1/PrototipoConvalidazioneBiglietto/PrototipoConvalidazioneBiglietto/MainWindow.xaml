@@ -1,0 +1,24 @@
+﻿<Window x:Class="PrototipoConvalidazioneBiglietto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrototipoConvalidazioneBiglietto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Stringa letta dalla tessera" HorizontalAlignment="Left" Margin="68,79,0,0" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="txtStringa" HorizontalAlignment="Left" Height="35" Margin="68,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.337"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="btnSimula" Content="simula" HorizontalAlignment="Left" Margin="68,241,0,0" VerticalAlignment="Top" Width="175" Height="39" Click="BtnSimula_Click"/>
+
+    </Grid>
+</Window>
