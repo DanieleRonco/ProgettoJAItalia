@@ -81,6 +81,6 @@ void loop()
 
   /* Aspetto dei dati sulla porta seriale e li leggo */
   while (Serial.available() == 0);
-  accesso = Serial.readStringUntil('\n'); //DA CAMBIARE '\n' con ';'!
+  accesso = Serial.readStringUntil(';');
   OutputAccesso();
 }

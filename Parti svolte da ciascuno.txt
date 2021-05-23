@@ -1,0 +1,21 @@
+PARTI SVOLTE DA CIASCUNO
+
+Roncoroni:
+	Documentazione indicata
+	Arduino - NFC_Dispencer
+	Arduino - NFC_Scheda
+	
+Camagni:
+	Documentazione indicata
+	C# - ProgettoPCTOApp
+	C# - PrototipoConvalidazioneBiglietto
+	
+D'Assaro:
+	Documentazione indicata
+	C# - ProgettoPCTOApp
+	C# - PrototipoConvalidazioneBiglietto
+	
+Ginisi:
+	Documentazione indicata
+	C# - ProgettoPCTOApp
+	C# - PrototipoConvalidazioneBiglietto

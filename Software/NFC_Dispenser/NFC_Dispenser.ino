@@ -40,7 +40,7 @@ void loop()
 {
   /* Aspetto dei dati sulla porta seriale e li leggo */
   while(Serial.available() == 0);
-  stringaSeriale = Serial.readStringUntil('\n'); //DA CAMBIARE '\n' con '#'!
+  stringaSeriale = Serial.readStringUntil('#');
 
   /* Suddivido la stringa nei vari campi e li carico in un vettore */
   for(int i = 0; i < numeriBlocchi; i++){
