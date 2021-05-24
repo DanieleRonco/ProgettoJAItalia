@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.IO.Ports;
 using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +31,7 @@ namespace ProgettoPCTOApp
         Utente u;
         string tariffa;
         int indice;
+        SerialPort com;
         float costo;
         float saldo;
         Biglietto b;
@@ -137,6 +139,7 @@ namespace ProgettoPCTOApp
             lblIndice.Content = indice.ToString();
             lblSaldo.Content = u.getSaldo().ToString() + " €";
             saldo = u.getSaldo();
+            com.Write(u.ToCsv());
         }
 
         private void CmbTariffa_SelectionChanged(object sender, SelectionChangedEventArgs e)

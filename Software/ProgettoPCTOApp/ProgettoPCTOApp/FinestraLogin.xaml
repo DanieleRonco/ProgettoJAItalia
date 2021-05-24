@@ -17,10 +17,10 @@
         <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Height="23" Margin="222,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TxtCognome_TextChanged"/>
         <Label Content="Inserire Cognome:" HorizontalAlignment="Left" Margin="222,152,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Inserire Password:" HorizontalAlignment="Left" Margin="222,211,0,0" VerticalAlignment="Top" Width="109"/>
-        <Button x:Name="btnAccedi" Content="ACCEDI" HorizontalAlignment="Left" Margin="222,320,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="BtnAccedi_Click" IsEnabled="False"/>
+        <Button x:Name="btnAccedi" Content="ACCEDI" HorizontalAlignment="Left" Margin="222,320,0,0" VerticalAlignment="Top" Width="120" Height="34" Background="#FF5084F1" Click="BtnAccedi_Click" IsEnabled="False"/>
         <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="222,243,0,0" VerticalAlignment="Top" Width="120" Height="21"/>
         <Image Margin="378,25,19,338.8" Source="logo_large.png" Stretch="Fill"/>
-        <Button x:Name="btnHome" Content="INDIETRO" HorizontalAlignment="Left" Margin="10,357,0,0" VerticalAlignment="Top" Width="74" Height="35" Click="btnHome_Click" FontWeight="Bold"/>
+        <Button x:Name="btnHome" Content="INDIETRO" HorizontalAlignment="Left" Margin="10,357,0,0" VerticalAlignment="Top" Width="74" Height="35" Background="#FF5084F1" Click="btnHome_Click" FontWeight="Bold"/>
 
     </Grid>
 </Window>
