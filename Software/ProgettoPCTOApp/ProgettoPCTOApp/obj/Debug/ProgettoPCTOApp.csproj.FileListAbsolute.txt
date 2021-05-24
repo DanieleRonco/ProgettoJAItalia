@@ -78,3 +78,24 @@ C:\Users\Riccardo\Documents\ProgettoJAItalia\Prototipo_1\ProgettoPCTOApp\Progett
 C:\Users\Riccardo\Documents\ProgettoJAItalia\Prototipo_1\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp.csproj.CoreCompileInputs.cache
 C:\Users\Riccardo\Documents\ProgettoJAItalia\Prototipo_1\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp.exe
 C:\Users\Riccardo\Documents\ProgettoJAItalia\Prototipo_1\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp.pdb
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\bin\Debug\ProgettoPCTOApp.exe.config
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\bin\Debug\ProgettoPCTOApp.exe
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\bin\Debug\ProgettoPCTOApp.pdb
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp.csprojAssemblyReference.cache
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\FinestraAreaRiservata.g.cs
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\FinestraLogin.g.cs
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\FinestraRegistrazione.g.cs
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\MainWindow.g.cs
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\App.g.cs
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp_MarkupCompile.cache
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp_MarkupCompile.lref
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\FinestraAreaRiservata.baml
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\FinestraLogin.baml
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\FinestraRegistrazione.baml
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\MainWindow.baml
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp.g.resources
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp.Properties.Resources.resources
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp.csproj.GenerateResource.cache
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp.csproj.CoreCompileInputs.cache
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp.exe
+C:\Users\xdado\OneDrive\Desktop\PROGETTO JA ITALIA\Software\ProgettoPCTOApp\ProgettoPCTOApp\obj\Debug\ProgettoPCTOApp.pdb

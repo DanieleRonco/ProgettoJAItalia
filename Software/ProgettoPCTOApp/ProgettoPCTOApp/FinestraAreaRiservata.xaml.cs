@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Globalization;
 using System.Linq;
 using System.IO.Ports;
-using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -30,6 +30,7 @@ namespace ProgettoPCTOApp
         gestioneFile g;
         Utente u;
         string tariffa;
+     
         int indice;
         SerialPort com;
         float costo;
@@ -81,6 +82,13 @@ namespace ProgettoPCTOApp
 
         }
 
+        private int GetWeekNumber(DateTime date)
+        {
+            System.Globalization.Calendar calendar = System.Threading.Thread.CurrentThread.CurrentCulture.Calendar;
+            System.Globalization.DateTimeFormatInfo dateTimeFormat = System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat;
+
+            return calendar.GetWeekOfYear(date, dateTimeFormat.CalendarWeekRule, dateTimeFormat.FirstDayOfWeek);
+        }
 
         void timer_Tick(object sender, EventArgs e)
         {
@@ -153,6 +161,7 @@ namespace ProgettoPCTOApp
             }
             if (cmbTariffa.SelectedIndex == 1)
             {
+                indice = GetWeekNumber(DateTime.Now.Date);
                 lblCosto.Content = "15 €";
                 costo = 15;
                 tariffa = "s";
