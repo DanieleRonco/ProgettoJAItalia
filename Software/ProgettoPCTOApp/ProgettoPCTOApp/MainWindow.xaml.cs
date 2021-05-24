@@ -16,9 +16,7 @@ using System.Windows.Shapes;
 
 namespace ProgettoPCTOApp
 {
-    /// <summary>
-    /// Logica di interazione per MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         gestioneFile registrati;
@@ -28,7 +26,7 @@ namespace ProgettoPCTOApp
             registrati = new gestioneFile();
             InitializeComponent();
             Biglietto temp = new Biglietto("m", 12);
-            Utente utente1 = new Utente("Riccardo", "Camagni", " 18 / 29 / 0000", "miamael @gmail.com", "password", "123456", 10, temp);
+            Utente utente1 = new Utente("Riccardo", "Camagni", " 18 / 29 / 0000", "miamael @gmail.com", "password", "123456", 10000, temp);
             registrati.registra(utente1);
 
             

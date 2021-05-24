@@ -51,7 +51,14 @@ namespace PrototipoConvalidazioneBiglietto
 
             }
 
-            //qui andrebbe il controllo del settimanale
+
+            else if ((utenteDaVerificare.getTipoAbbonamento() == "s") && (utenteDaVerificare.getIndice() == GetWeekNumber(DateTime.Now.Date)))
+            {
+
+                MessageBox.Show("Biglietto valido");
+                com.Write("OK");
+
+            }
 
             else
             {
@@ -60,6 +67,14 @@ namespace PrototipoConvalidazioneBiglietto
             }
 
 
+        }
+
+        private int GetWeekNumber(DateTime date)
+        {
+            System.Globalization.Calendar calendar = System.Threading.Thread.CurrentThread.CurrentCulture.Calendar;
+            System.Globalization.DateTimeFormatInfo dateTimeFormat = System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat;
+
+            return calendar.GetWeekOfYear(date, dateTimeFormat.CalendarWeekRule, dateTimeFormat.FirstDayOfWeek);
         }
 
         private void BtnSimula_Click(object sender, RoutedEventArgs e)
@@ -87,8 +102,14 @@ namespace PrototipoConvalidazioneBiglietto
 
             }
 
-            //qui andrebbe il controllo del settimanale
-      
+            else if ((utenteDaVerificare.getTipoAbbonamento() == "s") && (utenteDaVerificare.getIndice() == GetWeekNumber(DateTime.Now.Date)))
+            {
+
+                MessageBox.Show("Biglietto valido");
+                com.Write("OK");
+
+            }
+
             else
             {
                 MessageBox.Show("biglietto non valido");
