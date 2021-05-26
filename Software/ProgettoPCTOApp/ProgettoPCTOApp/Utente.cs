@@ -91,7 +91,6 @@ namespace ProgettoPCTOApp
             return biglietto;
         }
 
-
         public string getCodFiscale()
         {
             return codFiscale;
@@ -115,10 +114,9 @@ namespace ProgettoPCTOApp
             return tmp;
         }
 
-       
-
-
-
-
+        public string ToCsvBiglietto()
+        {
+            return nome + ";" + cognome + ";" + codFiscale + ";" + biglietto.getTariffa() + ";" + biglietto.getFineBiglietto() + ";" + saldo + ";";
+        }
     }
 }

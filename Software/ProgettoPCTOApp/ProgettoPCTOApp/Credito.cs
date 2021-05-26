@@ -33,13 +33,11 @@ namespace ProgettoPCTOApp
             return pin;
         }
 
-
         public string ToCsv()
         {
             string tmp;
             tmp = saldo + ";" + pin;
             return tmp;
         }
-
     }
 }

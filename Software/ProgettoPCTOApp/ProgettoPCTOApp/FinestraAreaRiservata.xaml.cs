@@ -22,22 +22,24 @@ using System.Runtime;
 
 namespace ProgettoPCTOApp
 {
-   
-
     public partial class FinestraAreaRiservata : Window
     {
         DispatcherTimer timer;
         gestioneFile g;
         Utente u;
         string tariffa;
-     
-        int indice;
+
         SerialPort com;
+
+        int indice;
         float costo;
         float saldo;
         Biglietto b;
         public FinestraAreaRiservata(Utente temp, gestioneFile listaRegistrati)
         {
+            com = new SerialPort("COM3", 9600);
+            try { com.Open(); } catch { };
+
             u = temp;
             g = listaRegistrati;
             InitializeComponent();
@@ -75,11 +77,6 @@ namespace ProgettoPCTOApp
             cmbTariffa.Items.Add("Giornaliero");
             cmbTariffa.Items.Add("Settimanale");
             cmbTariffa.Items.Add("Mensile");
-
-
-           
-
-
         }
 
         private int GetWeekNumber(DateTime date)
@@ -93,7 +90,6 @@ namespace ProgettoPCTOApp
         void timer_Tick(object sender, EventArgs e)
         {
             lblTime.Content = DateTime.Now.ToLongTimeString();
-   
         }
 
         private void btnHome_Click(object sender, RoutedEventArgs e)
@@ -105,20 +101,17 @@ namespace ProgettoPCTOApp
 
         private void btnCompra_Click(object sender, RoutedEventArgs e)
         {
-
             if (costo > saldo) {
-
                 MessageBox.Show("Non hai abbastanza credito!");
                 return;
             }
-
 
             saldo = saldo - costo;
             b.setBiglietto(tariffa,indice);
             u.aggiornaUtente(saldo, b);
             SaveFileDialog saveFileDialog = new SaveFileDialog();
            
-                g.Salva();
+            g.Salva();
             b = u.getBiglietto();
             tariffa = b.getTariffa();
             indice = b.getIndice();
@@ -140,14 +133,13 @@ namespace ProgettoPCTOApp
             }
             else
             {
-
                 lblTariffa.Content = "NESSUNO";
                 lblIndice.Content = "NESSUNO";
             }
             lblIndice.Content = indice.ToString();
             lblSaldo.Content = u.getSaldo().ToString() + " €";
             saldo = u.getSaldo();
-            com.Write(u.ToCsv());
+            com.Write(u.ToCsvBiglietto());
         }
 
         private void CmbTariffa_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -175,8 +167,6 @@ namespace ProgettoPCTOApp
             }
           
             btnCompra.IsEnabled = true;
-        }
-        
+        }   
     }
-   
 }
