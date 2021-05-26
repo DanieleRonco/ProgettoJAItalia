@@ -36,8 +36,8 @@ void setup()
   pinMode(ledRosso, OUTPUT);
   pinMode(Buzzer, OUTPUT);
   
-  Serial.println("Setup Completato...");
-  Serial.println();
+  /*Serial.println("Setup Completato...");
+  Serial.println();*/
 }
 
 void loop() 
