@@ -4,7 +4,7 @@ void WriteDataToBlock(int blockNum, byte blockData[])
   status = mfrc522.PCD_Authenticate(MFRC522::PICC_CMD_MF_AUTH_KEY_A, blockNum, &key, &(mfrc522.uid));
   if (status != MFRC522::STATUS_OK)
   {
-    Serial.print("ERRORE in AUTENTICAZIONE per SCRITTURA: ");
+    errore = true;
     Serial.println(mfrc522.GetStatusCodeName(status));
     return;
   }
@@ -12,10 +12,11 @@ void WriteDataToBlock(int blockNum, byte blockData[])
   status = mfrc522.MIFARE_Write(blockNum, blockData, 16);
   if (status != MFRC522::STATUS_OK)
   {
-    Serial.print("ERRORE in SCRITTURA: ");
+    errore = true;
     Serial.println(mfrc522.GetStatusCodeName(status));
     return;
-  }  
+  }
+  errore = false;
 }
 
 

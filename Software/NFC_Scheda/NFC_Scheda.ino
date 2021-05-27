@@ -20,6 +20,7 @@ byte bufferLen = 18;
 int VettoreNumeriBlocchi[numeriBlocchi] = {bloccoNome, bloccoCognome, bloccoID, bloccoAbbonamento, bloccoFineAbbonamento, bloccoCredito};
 
 String UID, stringaSeriale, accesso;
+bool errore = false;
 
 #define ledVerde 6
 #define ledRosso 5
@@ -65,10 +66,13 @@ void loop()
   if (UID == UID_Precedente) return;
   else {
     stringaSeriale = "";
-    for(int i = 0; i < numeriBlocchi; i++){
-      ReadDataFromBlock(VettoreNumeriBlocchi[i], readBlockData);
-      stringaSeriale.concat(String((char*)readBlockData) + ";");
+    while(errore){
+      for(int i = 0; i < numeriBlocchi; i++){
+        ReadDataFromBlock(VettoreNumeriBlocchi[i], readBlockData);
+        stringaSeriale.concat(String((char*)readBlockData) + ";");
+      } 
     }
+    errore = false;
     Serial.println(stringaSeriale);
 
     /* Stampa dati badge */

@@ -22,6 +22,8 @@ int VettoreNumeriBlocchi[numeriBlocchi] = {bloccoNome, bloccoCognome, bloccoID, 
 String stringaSeriale, nome, cognome, id, abbonamento, fineAbbonamento, credito, campo;
 String VettoreDatiRicevuti[numeriBlocchi] = {nome, cognome, id, abbonamento, fineAbbonamento, credito};
 
+bool errore = false;
+
 #define Buzzer 7
 
 void setup() 
@@ -69,10 +71,13 @@ void loop()
   /*Serial.println("Tessera selezionata");*/
 
   /* Nei campi della tessera NFC indicati carico le informazioni prelevate dalla Serial */
-  for(int i = 0; i < numeriBlocchi; i++) {
-    VettoreDatiRicevuti[i].getBytes(writeBlockData,16);
-    WriteDataToBlock(VettoreNumeriBlocchi[i], writeBlockData);
+  while(errore){
+    for(int i = 0; i < numeriBlocchi; i++) {
+      VettoreDatiRicevuti[i].getBytes(writeBlockData,16);
+      WriteDataToBlock(VettoreNumeriBlocchi[i], writeBlockData);
+    }
   }
+  errore = false;
   
   OutputAccesso();
 }

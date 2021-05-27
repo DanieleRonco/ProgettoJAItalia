@@ -26,7 +26,7 @@ void ReadDataFromBlock(int blockNum, byte readBlockData[])
   
   if (status != MFRC522::STATUS_OK)
   {
-     Serial.print("ERRORE in AUTENTICAZIONE per LETTURA: ");
+     errore = true;
      Serial.println(mfrc522.GetStatusCodeName(status));
      return;
   }
@@ -34,10 +34,11 @@ void ReadDataFromBlock(int blockNum, byte readBlockData[])
   status = mfrc522.MIFARE_Read(blockNum, readBlockData, &bufferLen);
   if (status != MFRC522::STATUS_OK)
   {
-    Serial.print("ERRORE in LETTURA: ");
+    errore = true;
     Serial.println(mfrc522.GetStatusCodeName(status));
     return;
-  }  
+  }
+  errore = false;
 }
 
 
