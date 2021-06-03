@@ -71,12 +71,12 @@ void loop()
   /*Serial.println("Tessera selezionata");*/
 
   /* Nei campi della tessera NFC indicati carico le informazioni prelevate dalla Serial */
-  while(errore){
+  do {
     for(int i = 0; i < numeriBlocchi; i++) {
       VettoreDatiRicevuti[i].getBytes(writeBlockData,16);
       WriteDataToBlock(VettoreNumeriBlocchi[i], writeBlockData);
     }
-  }
+  } while(errore);
   errore = false;
   
   OutputAccesso();

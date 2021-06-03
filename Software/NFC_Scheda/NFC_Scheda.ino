@@ -66,12 +66,12 @@ void loop()
   if (UID == UID_Precedente) return;
   else {
     stringaSeriale = "";
-    while(errore){
+    do {
       for(int i = 0; i < numeriBlocchi; i++){
         ReadDataFromBlock(VettoreNumeriBlocchi[i], readBlockData);
         stringaSeriale.concat(String((char*)readBlockData) + ";");
-      } 
-    }
+      }
+    } while(errore);
     errore = false;
     Serial.println(stringaSeriale);
 
